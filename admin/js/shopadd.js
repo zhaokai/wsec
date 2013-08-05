@@ -151,12 +151,12 @@ $(function(){
 			return false;
 		}
 		if ($("#address").val()==''){
-			alert('餐厅地址不能为空');
+			alert('店铺地址不能为空');
 			$("#address").focus();
 			return false;
 		}
 		if ($("#tel").val()==''){
-			alert('餐厅电话不能为空');
+			alert('店铺电话不能为空');
 			$("#tel").focus();
 			return false;
 		}

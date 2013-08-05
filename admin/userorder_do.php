@@ -6,7 +6,7 @@
 	 * @create time   2011-8-22
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -119,7 +119,7 @@
 				if(mysql_query($sql2)){
 					//添加订单记录
 					$orderContent="<span class='greenbg'><span><span>我们正在下单</span></span></span>";
-					$orderContent.="亲，大厨正在努力烹制美味的食物，请耐心等待！";
+					$orderContent.="亲，师傅正在努力准备货物，请耐心等待！";
 					addOrderType($order,HTMLEncode($orderContent));
 					alertInfo('确定成功','userorder.php?key='.$key.$url,0);
 				}else{
@@ -142,7 +142,7 @@
 				if(mysql_query($sql2)){
 					//添加订单记录
 					$orderContent="<span class='greenbg'><span><span>订单已完成</span></span></span>";
-					$orderContent.="亲，享受美味的时候，别忘了继续光顾".$SHOP_NAME."哦，我们将更好的为您服务。";
+					$orderContent.="亲，享受服务的时候，别忘了继续光顾".$SHOP_NAME."哦，我们将更好的为您服务。";
 					addOrderType($order,HTMLEncode($orderContent));
 					$sql3="select order_user,order_id,order_id2 from qiyu_order where  order_id=".$id." and order_status='4'";
 					$results=mysql_query($sql3);
@@ -153,13 +153,13 @@
 					$score=getScore($orderid);
 					$sql4= "update qiyu_user set user_score=user_score+".$score." ,user_experience=user_experience+".expUserConsume." where user_id=".$uid;//更新积分,经验值	
 					mysql_query($sql4);
-					$sql5="select cart_count,food_id from qiyu_cart,qiyu_food where cart_food=food_id and cart_order=".$oid;//查询外卖数量
+					$sql5="select cart_count,food_id from qiyu_cart,qiyu_food where cart_food=food_id and cart_order=".$oid;//查询订单数量
 					$rs5=mysql_query($sql5);
 					while($rows5=mysql_fetch_assoc($rs5)){
 						$arr[]=$rows5;
 						$foodcount=$rows5['cart_count'];
 						$fid=$rows5['food_id'];
-						$sql6="update qiyu_food set food_count=food_count+".$foodcount." where food_id=".$fid;//插入外卖数量到食物表中
+						$sql6="update qiyu_food set food_count=food_count+".$foodcount." where food_id=".$fid;//插入订单数量到货物表中
 						mysql_query($sql6);
 					}
 					alertInfo('设置订单为已完成成功','userorder.php?key='.$key.$url,0);
@@ -177,7 +177,7 @@
 					$sql="update qiyu_order set order_status='4' where order_id=".$rows['order_id'];
 					mysql_query($sql) or die('error');
 					$orderContent="<span class='greenbg'><span><span>订单完成</span></span></span>";
-					$orderContent.="亲，享受美味的时候，别忘了继续光顾".$SHOP_NAME."哦，我们将更好的为您服务。";
+					$orderContent.="亲，享受服务的时候，别忘了继续光顾".$SHOP_NAME."哦，我们将更好的为您服务。";
 					addOrderType($order,HTMLEncode($orderContent));
 					//addOrderType($order,'您的订单完成');
 				}
@@ -282,7 +282,7 @@
 						if(mysql_query($sql2)){							
 							//添加订单记录
 							$orderContent="<span class='greenbg'><span><span>订单已完成</span></span></span>";
-							$orderContent.="亲，享受美味的时候，别忘了继续光顾".$SHOP_NAME."哦，我们将更好的为您服务。";
+							$orderContent.="亲，享受服务的时候，别忘了继续光顾".$SHOP_NAME."哦，我们将更好的为您服务。";
 							addOrderType($order,HTMLEncode($orderContent));
 							$sql4="select order_user,order_id2 from qiyu_order where order_status =4 and order_id =".$v;
 							$rs4 = mysql_query($sql4) or die ("查询失败，请检查SQL语句。");

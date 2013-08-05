@@ -6,14 +6,14 @@
 	 * @create time   2012-3-21
 	 * @update time
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
@@ -128,7 +128,7 @@ function ajaxFileUpload2()
 	
 	
  </script>
-  <title> 网站设置 - 微普外卖点餐系统 </title>
+  <title> 网站设置 - <JY>网店系统 </title>
  </head>
  <body>
  <div id="container">
@@ -149,7 +149,7 @@ function ajaxFileUpload2()
 					<div id="introAdd"  style="position: absolute;">
 						<form method="post" action="site_do.php?act=base">
 							<p>
-								<label>餐厅评论：</label>
+								<label>店铺评论：</label>
 								<input type="radio" name="comment_status" value="1" <?php if($site_isshowcomment=='1') echo 'checked';?>>&nbsp;显示&nbsp;&nbsp;<input type="radio" name="comment_status" value="2" <?php if($site_isshowcomment=='2') echo 'checked';?>>&nbsp;不显示
 							</p>
 							<p class="clear">
@@ -161,7 +161,7 @@ function ajaxFileUpload2()
 								<input type="radio" name="admin" value="1" <?php if($site_isshowadminindex=='1') echo 'checked';?>>&nbsp;显示&nbsp;&nbsp;<input type="radio" name="admin" value="2" <?php if($site_isshowadminindex=='2') echo 'checked';?>>&nbsp;不显示
 							</p>
 							<p class="clear">
-								<label>餐厅证照：</label>
+								<label>店铺证照：</label>
 								<input type="radio" name="card" value="1" <?php if($site_isshowcard=='1') echo 'checked';?>>&nbsp;显示&nbsp;&nbsp;<input type="radio" name="card" value="2" <?php if($site_isshowcard=='2') echo 'checked';?>>&nbsp;不显示
 							</p>
 							<p class='clear'>

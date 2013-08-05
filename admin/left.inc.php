@@ -3,16 +3,16 @@
 		<a href="admin.php">管理首页</a>
 	</li>
 	<li>
-		<span>餐厅管理</span>
+		<span>店铺管理</span>
 		<ul>
-			<li><a href="shopadd.php">餐厅信息管理</a></li>
-			<li><a href="shoppic.php">餐厅图片</a></li>
-			<li><a href="shopdelivertime.php">送餐时段</a></li>
-			<li><a href="shopdeliverfee.php">送餐费及时限</a></li>
+			<li><a href="shopadd.php">店铺信息管理</a></li>
+			<li><a href="shoppic.php">店铺图片</a></li>
+			<li><a href="shopdelivertime.php">送货时段</a></li>
+			<li><a href="shopdeliverfee.php">送货费及时限</a></li>
 			<?php
 				if ($site_isshowcard=='1'){
 			?>
-					<li><a href="shopcard.php">餐厅证照</a></li>
+					<li><a href="shopcard.php">店铺证照</a></li>
 			<?php
 				}	
 			?>

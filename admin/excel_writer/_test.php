@@ -21,7 +21,7 @@ $worksheet->setInputEncoding('utf-8');
 //$worksheet->write(0, 1, encoding('年龄'));
 $worksheet->write(0, 0, '姓名');
 $worksheet->write(0, 1, '年龄');
-$worksheet->write(1, 0, '微普科技');
+$worksheet->write(1, 0, 'JYZX');
 $worksheet->write(1, 1, 30);
 $worksheet->write(2, 0, 'Johann Schmidt');
 $worksheet->write(2, 1, 31);

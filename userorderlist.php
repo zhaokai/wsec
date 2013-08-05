@@ -6,7 +6,7 @@
 	 * @create time   2011-8-15
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -56,7 +56,7 @@
 							<table>
 								<tr>
 									<td width="140" class="meter">时间</td>
-									<td width="183" class="meter">餐厅名称</td>
+									<td width="183" class="meter">店铺名称</td>
 									<td width="174" class="meter">订单号</td>
 									<td width="86" class="meter">金额</td>
 									<td width="105" class="meter">状态</td>

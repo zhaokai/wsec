@@ -6,7 +6,7 @@
  * @create time   2012-4-13
  * @update time   
  * @author        jiangting
- * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+ * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
  */ 
 	require_once("usercheck2.php");
 	require_once("inc/function.php");
@@ -86,13 +86,13 @@
 <head>
 <title> 短信群发 </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="author" content="Jiangting@WiiPu -- http://www.wiipu.com" />
+<meta name="author" content="Jiangting@PLS -- http://www.PLS.com" />
 <link rel="stylesheet" href="../style.css" type="text/css"/>
 <script type="text/javascript" src="js/jquery-1.6.min.js"></script>
 <script src="js/sendsms.js" type="text/javascript"></script>
 <script src="../js/tree.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/upload.js"></script>
-<title> 短信群发 - 微普外卖点餐系统 </title>
+<title> 短信群发 - <JY>网店系统 </title>
 </head>
 
  <body>

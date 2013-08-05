@@ -6,19 +6,19 @@
 	 * @create time   2012-3-21
 	 * @update time
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
   <script src="../js/tree.js" type="text/javascript"></script>
-  <title> 管理首页 - 微普外卖点餐系统 </title>
+  <title> 管理首页 - <JY>网店系统 </title>
   <style>
 	#main #introAdd li{
 		width:100%;
@@ -83,7 +83,7 @@
 							<?php
 								}
 								if (empty($SHOP_NAME) || empty($SHOP_TEL) || empty($SHOP_OPENSTARTTIME) || empty($SHOP_OPENENDTIME) || empty($SHOP_MAINFOOD) || empty($SHOP_ADDRESS)){
-									echo "<p><a href='shopadd.php'>设置餐厅基本信息</a></p>";
+									echo "<p><a href='shopadd.php'>设置店铺基本信息</a></p>";
 								}
 								if (empty($logo)){
 									echo "<p><a href='site.php'>设置网站LOGO</a></p>";
@@ -92,7 +92,7 @@
 								$rs=mysql_query($sql1);
 								$rows=mysql_fetch_assoc($rs);
 								if (!$rows){
-									echo "<p><a href='shopdelivertime.php'>设置送餐时段</a></p>";
+									echo "<p><a href='shopdelivertime.php'>设置送货时段</a></p>";
 								}
 								if ((empty($site_wiiyunsalt) || empty($site_wiiyunaccount) || empty($SHOP_PHONE)) && $site_sms=='1'){
 									echo "<p><a href='site_sms.php'>短信设置</a></p>";
@@ -132,7 +132,7 @@
 							<p>更新时间：<?php echo $updateTime?></p>
 							<h2 class='h2_small' style='margin-top:50px;'>软件动态</h2>
 							<ul>
-								<script language='javascript' src="http://www.wiipu.com/news/diancan.php"></script>
+								<script language='javascript' src="http://www.PLS.com/news/diancan.php"></script>
 							</ul>
 							
 						

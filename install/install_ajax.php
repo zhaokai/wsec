@@ -6,8 +6,8 @@
  * @version       v0.01
  * @create time   2011-5-30
  * @update time   
- * @author        wiipu
- * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. ( http://www.wiipu.com)
+ * @author        PLS
+ * @copyright     Copyright (c) JYZX PLS Tech Inc. ( http://www.PLS.com)
  * @informaition  
 
  * Update Record:

@@ -6,19 +6,19 @@
 	 * @create time   2011-8-22
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
   <script src="../js/tree.js" type="text/javascript"></script>
-  <title> 证照信息上传 - 微普外卖点餐系统 </title>
+  <title> 证照信息上传 - <JY>网店系统 </title>
  </head>
  <body>
  <div id="container">
@@ -35,11 +35,11 @@
 					?>
 				</div>
 				<div id="shopRight">
-					<h1>餐厅证照</h1>
+					<h1>店铺证照</h1>
 
 					<div id="introAdd">
 						<div class="moneyTable feeTable" style="width:668px;margin-top:0px;padding-top:0">
-							<p style="color:red;margin-top:20px;margin-bottom:20px;">小提示：可以在“网站设置”里设置前台是否显示餐厅证照。</p>
+							<p style="color:red;margin-top:20px;margin-bottom:20px;">小提示：可以在“网站设置”里设置前台是否显示店铺证照。</p>
 							<table width="100%">
 								<tr>
 									<td class="center" width='100'>名称</td>

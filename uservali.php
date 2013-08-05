@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck.php");
@@ -58,7 +58,7 @@
 							<label>&nbsp;</label> <input type="image" src="images/button/vali.gif" id="send" class="valiButton"/>
 						</div>
 						<div class="addList">
-							<label>&nbsp;</label> <span style="margin-left:230px;">等不及了，<a href="index.php" class="gray">先去点餐</a></span>
+							<label>&nbsp;</label> <span style="margin-left:230px;">等不及了，<a href="index.php" class="gray">先去订购</a></span>
 						</div>
 						<div class="clear"></div>
 					</div><!--tab1-->

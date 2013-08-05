@@ -6,19 +6,19 @@
 	 * @create time   2011-8-22
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
   <script src="../js/tree.js" type="text/javascript"></script>
-  <title> 送餐费设置 - 微普外卖点餐系统 </title>
+  <title> 送货费设置 - <JY>网店系统 </title>
  </head>
  <body>
  <div id="container">
@@ -35,7 +35,7 @@
 					?>
 				</div>
 				<div id="shopRight">
-					<h1>送餐费及时限</h1>
+					<h1>送货费及时限</h1>
 					<div id="introAdd">
 						
 						<form method="post" action="shop_do.php?act=fee">
@@ -46,10 +46,10 @@
 		
 						?>	
 						<p><label class='label_140'>起送费：</label><input type="text" id="fee" name="fee" class="input input_87" value="<?php echo $rows['deliver_minfee']?>" onblur= "if(!/^[0-9\.]+$/.test(this.value))alert('起送费必须是数字! ')"/> 元 <span>(0为无)</span></p>
-						<p><label class='label_140'>送餐费：</label><input type="text" id="deliverFee" name="deliverFee" class="input input_87" value="<?php echo $rows['deliver_fee']?>" onblur= "if(!/^[0-9\.]+$/.test(this.value))alert('送餐费必须是数字! ')"/> 元 <span>(0为免费)</span></p>
-						<p><label class='label_140'>承诺送餐时间：</label><input type="text" name="dTime" class="input input270" value="<?php echo $rows['deliver_delivertime']?>"/></p>
-						<p style="color:red;"><label class='label_140'></label>提示：承诺送餐时间未填，前台不显示。</p>
-						<p><label class='label_140'>满起送费是否免送餐费：</label><input name="isfee" value="0" <?php if ($rows['deliver_isfee']==='0') echo "checked"?> type="radio"> 不免 <input name="isfee" value="1" <?php if ($rows['deliver_isfee']=='1') echo "checked"?> type="radio"> 免</p>
+						<p><label class='label_140'>送货费：</label><input type="text" id="deliverFee" name="deliverFee" class="input input_87" value="<?php echo $rows['deliver_fee']?>" onblur= "if(!/^[0-9\.]+$/.test(this.value))alert('送货费必须是数字! ')"/> 元 <span>(0为免费)</span></p>
+						<p><label class='label_140'>承诺送货时间：</label><input type="text" name="dTime" class="input input270" value="<?php echo $rows['deliver_delivertime']?>"/></p>
+						<p style="color:red;"><label class='label_140'></label>提示：承诺送货时间未填，前台不显示。</p>
+						<p><label class='label_140'>满起送费是否免送货费：</label><input name="isfee" value="0" <?php if ($rows['deliver_isfee']==='0') echo "checked"?> type="radio"> 不免 <input name="isfee" value="1" <?php if ($rows['deliver_isfee']=='1') echo "checked"?> type="radio"> 免</p>
 						<p><label class='label_140'>&nbsp;</label><input type="image" src="../images/button/submit_t.jpg" onClick="return check()" /></p>
 						</form>
 					</div>
@@ -112,7 +112,7 @@
 			return false;
 		}
 		if ($("#deliverFee").val()==''){
-			alert('送餐费不能为空');
+			alert('送货费不能为空');
 			return false;
 		}
 		

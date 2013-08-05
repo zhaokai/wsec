@@ -6,7 +6,7 @@
  * @create time   2011-5-16
  * @update time   
  * @author        jiangting
- * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+ * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
  * @informaition  
  */
  function getUserName($id){
@@ -344,7 +344,7 @@ function updateuserScore($score,$uid){
 	$sql_rr="update qiyu_user set user_score=user_score+".$score." where user_id=".$uid;
 	mysql_query($sql_rr);
 }
-//判断是否在送餐范围
+//判断是否在送货范围
 function isdeliverscope($spot_id,$shopID){
 	
 	$sql="select * from qiyu_shopspot where shopspot_spot=".$spot_id." and shopspot_shop=".$shopID;
@@ -358,7 +358,7 @@ function isdeliverscope($spot_id,$shopID){
 	return $isScope;
 }
 
-//判断是否在送餐范围----商圈
+//判断是否在送货范围----商圈
 function isdeliverscopeByCircle($circle_id,$shopID){
 	
 	$sql="select * from qiyu_shopcircle where shopcircle_circle=".$circle_id." and shopcircle_shop=".$shopID;
@@ -499,7 +499,7 @@ function updateCartCount($goods_id,$shop_id){
 
 /*
 
-	* getDeliveFee() 的到送餐费
+	* getDeliveFee() 的到送货费
 	* param $spotID 地标ID
 	* param $shopID 商家ID
 */
@@ -522,7 +522,7 @@ function getDeliveFee(){
 	return $deleverFee;
 
 }
-//按商圈的送餐费 
+//按商圈的送货费 
 function getDeliveFeeByCircle($circleID,$shopID){
 	$deleverFee=array();
 	
@@ -550,7 +550,7 @@ function getDeliveFeeByCircle($circleID,$shopID){
 	* param $shopID 商家ID
 */
 function getTag($spotID,$shopID){
-	//如果地标为空显示最低的送餐费
+	//如果地标为空显示最低的送货费
 	$tagStr='';
 	$comm='';
 	$sql_ff="select * from qiyu_tag inner join qiyu_shoptag on shoptag_tag=tag_id and  shoptag_shop=".$shopID;
@@ -1063,7 +1063,7 @@ function getShopSortByID($id){
 	
 }
 
-//检查是否是送餐时间段
+//检查是否是送货时间段
 function checkDeliverTime($shopID){
 			$sql1="select * from  qiyu_delivertime where time(now())>=delivertime_starttime and time(now())<=delivertime_endtime";
 			$rs=mysql_query($sql1);
@@ -1204,8 +1204,8 @@ function GetDistance($lat1, $lng1, $lat2, $lng2)
 		else
 			return '';
 	}
-	//检查是否已催过餐
-	function checkhurry($typechange,$order,$hurry){//催餐
+	//检查是否已催过货
+	function checkhurry($typechange,$order,$hurry){//催货
 		$sql="select * from qiyu_orderchange where roderchange_typechange='".$typechange."' and orderchange_order='".$order."' and orderchange_hurry='".$hurry."'";
 		$rs=mysql_query($sql);
 		$row=mysql_fetch_assoc($rs);

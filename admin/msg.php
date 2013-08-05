@@ -6,7 +6,7 @@
  * @create time   2011-9-10
  * @update time   
  * @author        liuxiaohui
- * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+ * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
  * @informaition  
  */
 	require_once("usercheck2.php");

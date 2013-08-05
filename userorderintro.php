@@ -6,7 +6,7 @@
 	 * @create time   2011-8-15
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -198,17 +198,17 @@
 										
 															
 										<tr>
-											<td style="border:0" colspan="4">餐饮要求：<span class="red"><?php echo $orderText;?></span></td>
+											<td style="border:0" colspan="4">货品要求：<span class="red"><?php echo $orderText;?></span></td>
 										</tr>
 										<tr>
 											<td style="border:0" colspan="4">订单备注：<span class="red"><?php echo $orderInfor;?></span></td>
 										</tr>
 										<tr>
-											<td style="border:0" colspan="4">餐点总额：<span class="red"> <?php echo $orderTotal?>元 </span></td>
+											<td style="border:0" colspan="4">订单总额：<span class="red"> <?php echo $orderTotal?>元 </span></td>
 											
 										</tr>
 										<tr>
-											<td style="border:0">送餐费：<span class="red"> <?php echo $deliverFee?>元 </span></td>
+											<td style="border:0">送货费：<span class="red"> <?php echo $deliverFee?>元 </span></td>
 											<td colspan="3" style="border: 0px ;">
 												<span class="red" style='font-size:24px;'>总计：<?php echo $orderPriceAll?>元</span>
 											</td>

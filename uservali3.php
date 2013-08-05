@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck.php");
@@ -100,7 +100,7 @@ function sendcode(){
 					<div id="loginRight" class="loginRight_r">
 						<p>已经注册了<?php echo $SHOP_NAME?>账号？ <a href="userlogin.php">立刻登录</a></p>
 						<p style="margin-top:50px;">还没有<?php echo $SHOP_NAME?>账号？ <a href="userreg.php">马上注册一个</a></p>
-						<p style="margin-top:5px;"><span>注册<?php echo $SHOP_NAME?>账号，即可体验快捷点餐<br/>的便利， 享受网站的各项优惠折扣。</span></p>
+						<p style="margin-top:5px;"><span>注册<?php echo $SHOP_NAME?>账号，即可体验快捷订购<br/>的便利， 享受网站的各项优惠折扣。</span></p>
 					</div>
 					<div class="clear"></div>
 				</div><!--tab_box_r-->

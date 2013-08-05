@@ -6,7 +6,7 @@
 	 * @create time   2011-8-15
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 ?>
@@ -39,7 +39,7 @@
 							<label>您的详细地址：</label><input type="text" id="address" name="address" class="input"/> <span class="red errormt"></span>
 						</div>
 						<div class="addList newAddList">
-							<label>&nbsp;</label> <span>请填写您的准确地址，以便及时收到餐点。 例如：西四北大街888号11层1102室</span>
+							<label>&nbsp;</label> <span>请填写您的准确地址，以便及时收到货品。 例如：北大街888号11层1102室</span>
 						</div>
 						<div class="clear"></div>
 						<div class="addList newAddList" style="height:40px;">

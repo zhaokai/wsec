@@ -6,7 +6,7 @@
 	 * @create time   2011-8-15
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -40,8 +40,8 @@
 							<table>
 								<tr>
 									<td width="135" class="metal">订单时间</td>
-									<td width="185" class="metal borderLeft">餐厅名称</td>
-									<td width="137" class="metal borderLeft">外卖菜品</td>
+									<td width="185" class="metal borderLeft">店铺名称</td>
+									<td width="137" class="metal borderLeft">订单货品</td>
 									<td width="180" class="metal borderLeft">订单号</td>
 									<td width="100" class="metal borderLeft">金额</td>
 									<td width="177" class="metal borderLeft">状态</td>
@@ -110,7 +110,7 @@
 									}
 								}
 							?></p>
-							<p>送餐速度：<span><?php echo $SCORESPEED[$speed]?></span> 
+							<p>送货速度：<span><?php echo $SCORESPEED[$speed]?></span> 
 							<?php
 								for($i=0;$i<$speed/2;$i++){
 									echo "<img src=\"images/star_1_1.gif\" alt=\"\" /> ";

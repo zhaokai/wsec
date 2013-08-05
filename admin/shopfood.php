@@ -6,19 +6,19 @@
 	 * @create time   2011-8-24
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
   <script src="../js/tree.js" type="text/javascript"></script>
-  <title> 订单管理 - 微普外卖点餐系统 </title>
+  <title> 订单管理 - <JY>网店系统 </title>
  </head>
  <body>
  <div id="container">
@@ -35,7 +35,7 @@
 					?>
 				</div>
 				<div id="shopRight">
-					<h1>编辑餐厅菜单信息</h1>
+					<h1>编辑店铺菜单信息</h1>
 					<div id="process">
 						<img src="../images/shop/1_2.jpg" alt="" />
 						<img src="../images/shop/2_1.jpg"  alt="" />
@@ -70,7 +70,7 @@
 							</table>
 							<table border='0' style="border:0">
 								<tr height="30">
-									<td width="100" class="noBorder">菜名</td>
+									<td width="100" class="noBorder">货品名</td>
 									<td width="80" class="noBorder">价格</td>	
 									<td width="80" class="noBorder">标签</td>
 									<td width="100" class="noBorder">状态</td>

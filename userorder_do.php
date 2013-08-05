@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiagnxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	header("Content-type: text/html; charset=utf-8");
@@ -193,9 +193,9 @@
 		$shop_discount=$rows['shop_discount'];
 	
 	}
-	//得到用户的送餐地址的地标
+	//得到用户的送货地址的地标
 	if (empty($addressList)){
-		alertInfo("您还没有选择送餐地址","index.php",0);
+		alertInfo("您还没有选择送货地址","index.php",0);
 		exit;
 	}
 	$sql="select * from qiyu_useraddr where useraddr_id=".$addressList;
@@ -223,7 +223,7 @@
 			}
 		}
 
-		//得到用户地标下的送餐费
+		//得到用户地标下的送货费
 		$sql="select * from qiyu_deliver";
 		$rs=mysql_query($sql);
 		$row=mysql_fetch_assoc($rs);
@@ -272,7 +272,7 @@
 		}
 	}
 	if (empty($total)){
-		alertInfo("您还没有添加餐品","index.php",0);
+		alertInfo("您还没有添加货品","index.php",0);
 	}
 	//判断是否满足商家设定的外送消费下限
 		if ($total<$sendfee_r && $orderType!='group'){		
@@ -410,7 +410,7 @@
 			$print_content='【第 '.$i.' 联】'."\n";
 		}
 		$print_content.="订单号：".$order.  "\n";
-		$print_content.="订餐时间：".$ordertime.  "\n";
+		$print_content.="订货时间：".$ordertime.  "\n";
 		if (!empty($time2)){
 			$print_content.="预约时间：".$time1.' '.$time2. ":00\n";
 		}
@@ -422,7 +422,7 @@
 		$print_content.=$content_p;
 		$print_content.="------------------------- \n";	
 		if($deliverfee_r>0){
-			$print_content.="送餐费:￥".number_format($deliverfee_r,2)." \n";
+			$print_content.="送货费:￥".number_format($deliverfee_r,2)." \n";
 		}	
 		$print_content.="总金额:￥".number_format($totalAll,2)." \n";	
 		$print_content.="备注: ".str_replace('<br/>','',str_replace('&nbsp;','',$orderDesc)). " \n\n\n\n\n\n";

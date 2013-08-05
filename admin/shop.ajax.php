@@ -6,7 +6,7 @@
 	 * @create time   2011-7-27
 	 * @update time   
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition  
 	 */
 	require_once("usercheck2.php");
@@ -197,7 +197,7 @@
 			$worksheet->write(0, 2, '订单号');
 			$worksheet->write(0, 3, '用户名');
 			$worksheet->write(0, 4, '订单详情');
-			$worksheet->write(0, 5, '送餐费');
+			$worksheet->write(0, 5, '送货费');
 			$worksheet->write(0, 6, '订单总额');
 			$worksheet->write(0, 7, '现金支付');
 			$worksheet->write(0, 8, '饭点支付');

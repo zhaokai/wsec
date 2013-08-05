@@ -6,7 +6,7 @@
 	 * @create time   2012-11-10
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck.php");
@@ -247,13 +247,13 @@
 							</div>
 							<div id="gray_top"></div>
 							<div id="gray_center">
-								<p style='margin-top:0;'><label>餐厅地址：</label><span class='content'><?php echo $shop_address?></span></p>
+								<p style='margin-top:0;'><label>店铺地址：</label><span class='content'><?php echo $shop_address?></span></p>
 								<div class='clear'></div>
-								<p><label>餐厅电话：</label><span class='content'><?php echo $tel?></span></p>
+								<p><label>店铺电话：</label><span class='content'><?php echo $tel?></span></p>
 								<div class='clear'></div>
-								<p><label>餐厅主营：</label><span class='content'><?php echo $mainfood?></span></p>
+								<p><label>店铺主营：</label><span class='content'><?php echo $mainfood?></span></p>
 								<div class='clear'></div>
-								<p>送餐时段：
+								<p>送货时段：
 								<?php
 									$i=1;
 									$sql="select * from qiyu_delivertime where delivertime_shop=".$shopID;
@@ -267,7 +267,7 @@
 								?>
 								</p>
 								
-									<p>起送费：<?php echo $sendfee;?>元<span style="margin-left:14px;">送餐费：<?php echo $deliverfee?>元</span></p>
+									<p>起送费：<?php echo $sendfee;?>元<span style="margin-left:14px;">送货费：<?php echo $deliverfee?>元</span></p>
 									<?php if(!empty($site_onlinechat)){?>
 									<p>在线客服：									   
 									    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=<?php echo $site_onlinechat;?>&amp;site=qq&amp;menu=yes">
@@ -278,7 +278,7 @@
 									<?php
 										 if (!empty($delivertime)){
 									?>
-											<p>承诺送餐时间：<?php echo $delivertime?></p>
+											<p>承诺送货时间：<?php echo $delivertime?></p>
 									<?php
 										}	
 									?>
@@ -293,7 +293,7 @@
 								if($site_isshowcomment== '1'){
 							?>
 							<div class="like">
-								<span class='count'>餐厅评论</span>
+								<span class='count'>店铺评论</span>
 							</div>
 							
 							<p class="h1">输入评论<?php if (empty($QIYU_ID_USER)){?><span><a href="userlogin.php">登陆</a></span><?php }?></p>

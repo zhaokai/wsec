@@ -14,7 +14,7 @@
 		$rows=mysql_fetch_assoc($rs);
 		return $rows['c'];
 	}
-	//得到催餐订单状态统计数量
+	//得到催货订单状态统计数量
 	function getChargeCount(){
 		$sql="select count(1) as c from qiyu_order,qiyu_orderchange where orderchange_order=order_id2 and orderchange_type='1' and order_status='5'";
 		$rs=mysql_query($sql);

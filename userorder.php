@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck.php");
@@ -129,12 +129,12 @@
 		}
 	}
 	if (empty($total)){
-		alertInfo("您还没有添加餐品","index.php",0);
+		alertInfo("您还没有添加货品","index.php",0);
 	}
 
 	//$user_defaultAdd=empty($_POST['addressID'])?'0':sqlReplace($_POST['addressID']);
 		
-		//得到用户地标下的送餐费
+		//得到用户地标下的送货费
 		$sql="select * from qiyu_deliver";
 		$rs=mysql_query($sql);
 		$row=mysql_fetch_assoc($rs);
@@ -180,7 +180,7 @@
 			}
 		}
 		
-		//如果>起送费并且 deliver_isfee 为1则免送餐费 
+		//如果>起送费并且 deliver_isfee 为1则免送货费 
 		if ($isDFee=='1' && $total>=$sendfee_r){  
 			$deliverfee_r=0;						
 		}
@@ -321,7 +321,7 @@ function getPriceBySpot()
 								$('#tips1').hide();
 								$("#selever").hide();
 								$('#tips2').hide();
-								TINY.box.show_spot('亲，您选择的地址不在此餐厅派 送范围内。查看可如约送达的餐 厅，请点击<a href="spot.php?spotID='+spot+'&circleID='+circle+'">这里</a>。',0,160,60,0,0);
+								TINY.box.show_spot('亲，您选择的地址不在此店铺派 送范围内。查看可如约送达的店铺，请点击<a href="spot.php?spotID='+spot+'&circleID='+circle+'">这里</a>。',0,160,60,0,0);
 							}else{
 								$('#tips').show();
 								$('#tips2').show();
@@ -350,7 +350,7 @@ function getPriceByAddress(){
 								$('#tips1').hide();
 								$('#tips2').hide();
 								$("#selever").hide();
-								TINY.box.show_spot('亲，您选择的地址不在此餐厅派 送范围内。查看可如约送达的餐 厅，请点击<a href="spot.php?spotID='+rs[2]+'&circleID='+rs[1]+'">这里</a>',0,160,60,0,0);
+								TINY.box.show_spot('亲，您选择的地址不在此店铺派 送范围内。查看可如约送达的店铺，请点击<a href="spot.php?spotID='+rs[2]+'&circleID='+rs[1]+'">这里</a>',0,160,60,0,0);
 							}else{
 								$('#tips1').show();
 								$('#tips2').show();
@@ -429,11 +429,11 @@ function updateAddress(){
 
 function checkIsDwliver(deliver,code){
 	if (!code){
-		alert("不在商家的送餐范围内，请您修改地址。");
+		alert("不在商家的送货范围内，请您修改地址。");
 		return false;
 	}
 	if (!deliver){
-		TINY.box.show_spot('商家还没有设置该路标下的送餐费用，您暂时不能提交订单!',0,160,60,0,10);
+		TINY.box.show_spot('商家还没有设置该路标下的送货费用，您暂时不能提交订单!',0,160,60,0,10);
 		return false;
 	}
 }
@@ -635,7 +635,7 @@ function checkIsDwliver(deliver,code){
 								$('#tips1').hide();
 								$('#tips2').hide();
 								$("#selever").hide();
-								TINY.box.show_spot('亲，您选择的地址不在此餐厅派 送范围内。查看可如约送达的餐 厅，请点击<a href="spot.php?spotID='+spot+'&circleID='+circle+'">这里</a>。',0,160,60,0,0);
+								TINY.box.show_spot('亲，您选择的地址不在此店铺派 送范围内。查看可如约送达的店铺，请点击<a href="spot.php?spotID='+spot+'&circleID='+circle+'">这里</a>。',0,160,60,0,0);
 							}else{
 								$('#tips1').show();
 								$('#tips2').show();
@@ -667,7 +667,7 @@ function checkIsDwliver(deliver,code){
 								$('#tips1').hide();
 								$("#selever").hide();
 								$('#tips2').hide();
-								TINY.box.show_spot('亲，您选择的地址不在此餐厅派 送范围内。查看可如约送达的餐 厅，请点击<a href="spot.php?spotID='+spot+'&circleID='+circle+'">这里</a>。',0,160,60,0,0);
+								TINY.box.show_spot('亲，您选择的地址不在此店铺派 送范围内。查看可如约送达的店铺，请点击<a href="spot.php?spotID='+spot+'&circleID='+circle+'">这里</a>。',0,160,60,0,0);
 							}else{
 								$('#tips').show();
 								$('#tips2').show();
@@ -695,8 +695,8 @@ function checkIsDwliver(deliver,code){
 							<table>
 								<tr>
 									<td width="135" class="metal">订单时间</td>
-									<td width="365" class="metal borderLeft">餐厅名称</td>
-									<td width="137" class="metal borderLeft">外卖菜品</td>
+									<td width="365" class="metal borderLeft">店铺名称</td>
+									<td width="137" class="metal borderLeft">订单货品</td>
 									<td width="100" class="metal borderLeft">金额</td>
 									<td width="177" class="metal borderLeft">状态</td>
 		
@@ -778,7 +778,7 @@ function checkIsDwliver(deliver,code){
 							
 					</div>
 					<form method="post" action="userorder_do.php?shopID=<?php echo $shopID?>&shopSpot=<?php echo $shopSpot?>&circleID=<?php echo $shopCircle?>" id="submitForm">
-					<div class="order_title order_title_r" >您的送餐联系方式：</div>
+					<div class="order_title order_title_r" >您的送货联系方式：</div>
 					<div class="clear"></div>
 					<?php
 						if (!empty($QIYU_ID_USER) && empty($_SESSION['qiyu_temporary'])){
@@ -800,8 +800,8 @@ function checkIsDwliver(deliver,code){
 						?>
 						</div>
 						<?php
-							}else{//登陆后在该地标下无订餐时
-								echo'<p style="color:red;margin-top:10px;margin-left:30px;">您的送餐地址记录</p>';
+							}else{//登陆后在该地标下无订货时
+								echo'<p style="color:red;margin-top:10px;margin-left:30px;">您的送货地址记录</p>';
 						?>
 						<?php
 							}
@@ -834,15 +834,15 @@ function checkIsDwliver(deliver,code){
 					<div class="clear"></div>
 					<div class="order_title order_title_r" style="margin-top:30px">确认订单信息：</div>
 					
-					<div class="orderInfor" >外卖商品：<?php echo $total?>元 <span id='tips1' <?php if (empty($shopSpot) && empty($shopCircle)) echo "style='display:none;'"?>>|</span><span id="selever" >送餐费：<?php echo $str;?> </span><?php if (!empty($QIYU_ID_USER)){?><!--<span>|</span><span id="feeValue">饭点抵扣0 </span>--><?php }?><!-- <?php if (strpos($shop_pay,'|1|')!==false){?><span class="red">在线支付免送餐费</span><?php }?>--> </div>
+					<div class="orderInfor" >送货商品：<?php echo $total?>元 <span id='tips1' <?php if (empty($shopSpot) && empty($shopCircle)) echo "style='display:none;'"?>>|</span><span id="selever" >送货费：<?php echo $str;?> </span><?php if (!empty($QIYU_ID_USER)){?><!--<span>|</span><span id="feeValue">饭点抵扣0 </span>--><?php }?><!-- <?php if (strpos($shop_pay,'|1|')!==false){?><span class="red">在线支付免送货费</span><?php }?>--> </div>
 					<!--
 					<?php if ($shop_discount!='0.00'){?>
 						<div class="orderInfor" >
-							折扣后价格：<?php echo $total_discount?>元 <span style="margin-left:10px;">(饮料主食等部分餐品不参与折扣，最终价格以短信提示为准)</span>
+							折扣后价格：<?php echo $total_discount?>元 <span style="margin-left:10px;">(饮料主食等部分货品不参与折扣，最终价格以短信提示为准)</span>
 						</div>
 						
 					<?php }?> -->
-					<div class="orderInfor" id='tips2' >您本次点餐一共需要支付 : <b id="rest"><?php echo $totalAll;?>元</b>。</div>
+					<div class="orderInfor" id='tips2' >您本次订购一共需要支付 : <b id="rest"><?php echo $totalAll;?>元</b>。</div>
 					<!--<div class="orderInfor" >支付方式 <?php if (strpos($shop_pay,'|1|')!==false){?><input type="radio" name="pay" value='1' <?php if ($payCount==1  || strpos($shop_pay,"|1|")!==false) echo "checked"?>/> 在线支付<?php }?> <?php if (strpos($shop_pay,'|0|')!==false){?><input type="radio" name="pay" value='0' <?php if ($payCount==1) echo "checked"?>/> 货到付款<?php }?> </div> -->
 					<div class="submit">
 					<input type="image" id="ordertijiao" src="images/button/sure_order.jpg" OnClick="return checkOrder()"/>

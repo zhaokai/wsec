@@ -6,7 +6,7 @@
 	 * @create time   2011-8-24
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -18,12 +18,12 @@
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
   <script src="../js/tree.js" type="text/javascript"></script>
-  <title> 订单管理 - 微普外卖点餐系统 </title>
+  <title> 订单管理 - <JY>网店系统 </title>
  </head>
  <body>
  <script type="text/javascript">
@@ -119,7 +119,7 @@
 							<option value="2" <?php if($key=='2'){echo 'selected';}?> >商家取消</option>
 							<option value="3" <?php if($key=='3'){echo 'selected';}?> >用户取消</option>
 							<option value="4" <?php if($key=='4'){echo 'selected';}?> >订单完成</option>
-							<option value="5" <?php if($key=='5'){echo 'selected';}?> >备餐</option>
+							<option value="5" <?php if($key=='5'){echo 'selected';}?> >备货</option>
 						</select><a href="shoporder.php?key=0" style="margin-left:30px;">新订单<span id="countspan" class="red">(0)</span></a>
 					</div>
 					<div class="search_box">
@@ -134,7 +134,7 @@
 						<table  height="303" border="1" cellpadding="0" cellspacing="0" style="border:1px #000000 solid;"> 
 						  <tr>
 							<td width="121" align="center" class="meter">确认或修改订单</td>
-							<td width="85" class="meter" align="center">餐厅名称</td>
+							<td width="85" class="meter" align="center">店铺名称</td>
 							<td width="68" class="meter">单价</td>
 							<td width="59" class="meter">份数</td>
 							<td width="91" class="meter" align="center">顾客要求</td>
@@ -191,7 +191,7 @@
 
 						  <tr >
 							<td colspan="8" class="border_left border_bottom border_right order1">
-								<p>订单号:<?php echo $rows['order_id2']?> 订单时间:<?php echo substr($rows['order_addtime'],0,10)?> 用户姓名：<?php echo $rows['order_username']?> 订单类型：外卖订单</p>
+								<p>订单号:<?php echo $rows['order_id2']?> 订单时间:<?php echo substr($rows['order_addtime'],0,10)?> 用户姓名：<?php echo $rows['order_username']?> 订单类型：送货订单</p>
 								<p>地址：<?php echo $rows['order_address']?> 手机：<?php echo $rows['order_userphone']?></p>
 							</td>
 						  </tr>
@@ -228,7 +228,7 @@
 							</table></td>
 							<td class="border_left border_bottom" align="center"><?php echo $rows['order_text']?></td>
 							<td class="border_left border_bottom" style="padding-left:5px;">
-								送餐费：<?php echo $rows['order_deliverprice']?>元
+								送货费：<?php echo $rows['order_deliverprice']?>元
 								<p>总价：<?php echo $totalprice?>元</p>
 							<?php
 								//消费的积分
@@ -248,7 +248,7 @@
 							</td>
 							<td class="border_left border_bottom" align="center"><span class="red"><?php echo $orderState[$rows['order_status']]?></span></td>
 							<td class="border_left border_bottom border_right" align="center">
-							<?php if ($state=='0' || $state=='1' || $state=='6'){?>	<a href="shoporder_do.php<?php echo $url?>&act=qx&id=<?php echo $rows['order_id']?>">取消订单</p><?php }?><?php if ($state=='1'){?><a href="shoporder_do.php<?php echo $url?>&act=bc&id=<?php echo $rows['order_id']?>">开始备餐</a><?php }?><?php if ($state=='5'){?><a href="shoporder_do.php<?php echo $url?>&act=finish&id=<?php echo $rows['order_id']?>">订单完成</a><?php }?>
+							<?php if ($state=='0' || $state=='1' || $state=='6'){?>	<a href="shoporder_do.php<?php echo $url?>&act=qx&id=<?php echo $rows['order_id']?>">取消订单</p><?php }?><?php if ($state=='1'){?><a href="shoporder_do.php<?php echo $url?>&act=bc&id=<?php echo $rows['order_id']?>">开始备货</a><?php }?><?php if ($state=='5'){?><a href="shoporder_do.php<?php echo $url?>&act=finish&id=<?php echo $rows['order_id']?>">订单完成</a><?php }?>
 								<?php if (!($state=='2' || $state=='3' || $state=='4')){?>
 								<p><a href="javascript:void();" onClick="orderText(<?php echo $rows['order_id']?>)">添加备注</a></p>
 								<?php }?>

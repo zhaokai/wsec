@@ -6,7 +6,7 @@
 	 * @create time   2011-8-15
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -40,8 +40,8 @@
 							<table>
 								<tr>
 									<td width="135" class="metal">订单时间</td>
-									<td width="185" class="metal borderLeft">餐厅名称</td>
-									<td width="137" class="metal borderLeft">外卖菜品</td>
+									<td width="185" class="metal borderLeft">店铺名称</td>
+									<td width="137" class="metal borderLeft">订单货品</td>
 									<td width="180" class="metal borderLeft">订单号</td>
 									<td width="100" class="metal borderLeft">金额</td>
 									<td width="177" class="metal borderLeft">状态</td>
@@ -88,24 +88,24 @@
 					<div class="contact scoreList">
 						<input type="radio" name="total" value="2" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" />  很不满意
 					</div>
-					<div class="contact" style="border-top:1px #dcdcdc solid;margin-top:35px;padding-top:13px;"><span class="blank">餐点品质：</span>（对本次订单中餐点的口味、分量等进行评价）</div>
+					<div class="contact" style="border-top:1px #dcdcdc solid;margin-top:35px;padding-top:13px;"><span class="blank">货物品质：</span>（对本次订单中货物的质量、分量等进行评价）</div>
 					<div class="contact scoreList">
-						<input type="radio" name="test" value="10" checked/> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" />  非常好吃，分量也足够
+						<input type="radio" name="test" value="10" checked/> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" />  非常好，分量也足
 					</div>
 					<div class="contact scoreList">
-						<input type="radio" name="test" value="8" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_0.gif" alt="" />  味道不错，分量够了
+						<input type="radio" name="test" value="8" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_0.gif" alt="" />  不错，分量够了
 					</div>
 					<div class="contact scoreList">
-						<input type="radio" name="test" value="6" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" />  味道一般，量也一般
+						<input type="radio" name="test" value="6" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" />  一般，量也一般
 					</div>
 					<div class="contact scoreList">
-						<input type="radio" name="test" value="4" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" />  不太好吃，或者量不太够
+						<input type="radio" name="test" value="4" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" />  不太好，或者量不太够
 					</div>
 					<div class="contact scoreList">
-						<input type="radio" name="test" value="2" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" />  难吃，或者量很少
+						<input type="radio" name="test" value="2" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" /> <img src="images/star_1_0.gif" alt="" />  差，或者量很少
 					</div>
 					<div class="contact" style="border-top:1px #dcdcdc solid;margin-top:35px;padding-top:13px;">
-						<span class="blank">送餐速度：</span>
+						<span class="blank">送货速度：</span>
 					</div>
 					<div class="contact scoreList">
 						<input type="radio" name="speed" value="10" checked/> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" /> <img src="images/star_1_1.gif" alt="" />  非常快

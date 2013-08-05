@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("include/dbconn.php");
@@ -26,7 +26,7 @@
 			$sql1.=" and shop_id=".$shopID." and shop_status='1'";
 			$rs=mysql_query($sql1);
 			$row=mysql_fetch_assoc($rs);
-			if (!$row) alertInfo('现在不能点餐','',1);
+			if (!$row) alertInfo('现在不能订购','',1);
 			addcart($foodID,$shopID);
 			Header("Location: ".$url." ");
 		break;

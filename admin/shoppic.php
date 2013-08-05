@@ -6,7 +6,7 @@
 	 * @create time   2012-3-21
 	 * @update time
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -14,7 +14,7 @@
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
@@ -63,7 +63,7 @@
 	}
   //-->
   </script>
-  <title> 餐厅图片 - 微普外卖点餐系统 </title>
+  <title> 店铺图片 - <JY>网店系统 </title>
  </head>
  <body>
  <div id="container">
@@ -80,12 +80,12 @@
 					?>
 				</div>
 				<div id="shopRight">
-					<h1>餐厅图片</h1>
+					<h1>店铺图片</h1>
 					<div id="introAdd">
 						<form method="post" action="shoppic_do.php?act=add">
-							<p style="margin-left:42px;margin-bottom:10px;color:red;">小提示：餐厅图片是在首页左边的最上面显示。</p>
+							<p style="margin-left:42px;margin-bottom:10px;color:red;">小提示：店铺图片是在首页左边的最上面显示。</p>
 							<p>
-								<label>餐厅图片</label><span id="loading" style="display:none;"><img src="../images/loading.gif" width="16" height="16" alt="loading" /></span><span id="upinfo" style="color:blue;"></span><input id="upfile1" name="upfile1" value="<?php echo $SHOP_INFOS['shop_headpic1']?>" type="hidden"/><input id="fileToUpload" type="file" name="fileToUpload" style="height:24px;"/> <input type="button" onclick="return ajaxFileUpload();" value="上传"/> 图片尺寸275*215
+								<label>店铺图片</label><span id="loading" style="display:none;"><img src="../images/loading.gif" width="16" height="16" alt="loading" /></span><span id="upinfo" style="color:blue;"></span><input id="upfile1" name="upfile1" value="<?php echo $SHOP_INFOS['shop_headpic1']?>" type="hidden"/><input id="fileToUpload" type="file" name="fileToUpload" style="height:24px;"/> <input type="button" onclick="return ajaxFileUpload();" value="上传"/> 图片尺寸275*215
 							</p>
 							<p><label>&nbsp;</label><input type="image" src="../images/button/submit_t.jpg" /></p>
 						</form>

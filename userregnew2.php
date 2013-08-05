@@ -47,7 +47,7 @@
 				<div id="orderBox" class="loginBox">
 					<div class="order_title login_title">新人注册</div>
 					<div id="regPointer"><img src="images/regflow/2.jpg" alt="" /></div>
-					<div class="regH1">填写您的送餐地址:</div>
+					<div class="regH1">填写您的送货地址:</div>
 					<form method="post" action="userreg_do2.php?p=<?php echo $p?>&shopID=<?php echo $shopID?>&shopSpot=<?php echo $shopSpot?>&shopCircle=<?php echo $shopCircle?>">
 					<div class="regBox">
 						

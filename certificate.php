@@ -6,7 +6,7 @@
 	 * @create time   2011-8-15
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck.php");
@@ -21,7 +21,7 @@
 <script src="js/jquery-1.3.1.js" type="text/javascript"></script>
 <script src="js/addbg.js" type="text/javascript"></script>
 <script src="js/tab.js" type="text/javascript"></script>
-<title> <?php echo '餐厅证照';?> - <?php echo $SHOP_NAME?> - <?php echo $powered?> </title>
+<title> <?php echo '店铺证照';?> - <?php echo $SHOP_NAME?> - <?php echo $powered?> </title>
 </head>
 <body>
  <div id="container">
@@ -33,7 +33,7 @@
 			<div class="main_top"></div>
 			<div class="main_center">
 				<div id="about_title">
-					<span class="yellow"><?php echo '餐厅证照';?>
+					<span class="yellow"><?php echo '店铺证照';?>
 				</div>	
 				<div id="service_right">
 					<div id="text">

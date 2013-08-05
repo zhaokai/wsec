@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck.php");
@@ -129,10 +129,10 @@
 					?>
 					<div class="intro">
 						<p style="margin-top:0;">
-							餐厅主营：<?php echo $mainfood?>
+							店铺主营：<?php echo $mainfood?>
 						</p>
 						<p>联系电话：<?php echo $tel;?></p>
-						<p>送餐时段：
+						<p>送货时段：
 								<?php
 									$sql="select * from qiyu_delivertime where delivertime_shop=".$shopID;
 									$rs=mysql_query($sql);
@@ -144,7 +144,7 @@
 								?>
 						
 						</p>
-							<p>起送费：<?php echo $sendfee;?>元<span style="margin-left:16px;">送餐费：<?php echo $deliverfee?>元</span>
+							<p>起送费：<?php echo $sendfee;?>元<span style="margin-left:16px;">送货费：<?php echo $deliverfee?>元</span>
 							<?php if(!empty($site_onlinechat)){?>
 							在线客服：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=<?php echo $site_onlinechat;?>&amp;site=qq&amp;menu=yes">
 						     <img src="http://wpa.qq.com/pa?p=2:<?php echo $site_onlinechat;?>:41 &amp;r=0.9061154514854605" alt="点击QQ-联系客服" title="点击QQ-联系客服" border="0"></a>
@@ -156,8 +156,8 @@
 		</div><!--main_content完-->
 		<div id="tab3">
 			<ul>
-				<li class="selected">餐厅菜单</li>
-				<li>餐厅信息</li>
+				<li class="selected">店铺菜单</li>
+				<li>店铺信息</li>
 			</ul>
 		</div>
 		<div id="tab_box_r">
@@ -289,7 +289,7 @@
 							<div id="l_right">
 								
 								<div class="r_box r_box_r">
-									<h1>送餐时间</h1>
+									<h1>送货时间</h1>
 								<?php
 									$sql="select * from qiyu_delivertime where delivertime_shop=".$shopID;
 									$rs=mysql_query($sql);
@@ -302,12 +302,12 @@
 									
 								</div><!--r_box完-->
 								<div class="r_box r_box_r">
-									<h1>送餐信息</h1>
-									<p class="r_list">送餐费：<?php echo $deliverfee;?>元</p>
+									<h1>送货信息</h1>
+									<p class="r_list">送货费：<?php echo $deliverfee;?>元</p>
 									<p class="r_list">起送金额：<?php echo $sendfee;?>元</p>
 									 <p class="r_list">联系电话：<?php echo $tel;?></p>
 									 <div class="r_list auto_height">
-										<label>餐厅地址：</label><label class="content"><?php echo $shop_address;?></label>
+										<label>店铺地址：</label><label class="content"><?php echo $shop_address;?></label>
 										<div class="clear"></div>
 									 </div>
 									 

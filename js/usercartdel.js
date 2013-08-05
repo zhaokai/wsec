@@ -123,13 +123,13 @@
 					}, function (data, textStatus){
 						if (data=="N")//表示预约
 						{
-							TINY.box.show('亲爱的用户，目前已经过了餐厅的营业时间，我们会尽快延长网站服务时间。您可以点（继续）来提交预约订单，非常感谢您的使用<p style="margin-top:5px;"><img src="images/button/continue.jpg" onClick="continue_buy()" style="cursor:pointer;"/></p>',0,297,163,0,10);
+							TINY.box.show('亲爱的用户，目前已经过了店铺的营业时间，我们会尽快延长网站服务时间。您可以点（继续）来提交预约订单，非常感谢您的使用<p style="margin-top:5px;"><img src="images/button/continue.jpg" onClick="continue_buy()" style="cursor:pointer;"/></p>',0,297,163,0,10);
 							return false;
 						}else{
 						
 							if (total=='')
 							 {
-								 TINY.box.show_spot('您还没有添加餐品。',0,297,163,0,10);
+								 TINY.box.show_spot('您还没有添加货品。',0,297,163,0,10);
 								return false;
 							 }
 							var spot=$('#spotID').val();
@@ -139,7 +139,7 @@
 							{
 								if (total<sendfree)
 								{
-									TINY.box.show_spot('您的订单不够起送金额，请酌情增加或更换餐厅。',0,297,163,0,10);
+									TINY.box.show_spot('您的订单不够起送金额，请酌情增加或更换店铺。',0,297,163,0,10);
 									return false;
 								}
 							}
@@ -167,7 +167,7 @@
 	}
 
 	function addCart(shopID,foodID,spotID,circleID){
-		//检查是否是送餐时间
+		//检查是否是送货时间
 		var str='';
 		var name=$('#foodName'+foodID).val();
 		var price=$('#foodPrice'+foodID).val();
@@ -195,7 +195,7 @@
 			str+= "		<div id='c_table'>";
 			str+= "			<table border='0' width='455'>";
 			str+= "				<tr>";
-			str+= "					<td class='menu first td' width='195'>菜名</td>";
+			str+= "					<td class='menu first td' width='195'>货品名</td>";
 			str+= "					<td class='menu' >价格</td>";
 			str+= "				</tr>";
 			str+= "				<tr>";
@@ -205,9 +205,9 @@
 			str+= "			</table>";
 			str+= "		</div>";
 			str+= "<div id=\"cart_needs\"><span class='span span_need'>口味需求：</span><input type=\"checkbox\" id='styleNeeds1' onClick='addContent(1)' value='主食加量' class='styleCheck'/> <span class='span mainfood'>主食加量</span> <input type=\"checkbox\" id='styleNeeds2' onClick='addContent(2)' value='加辣' class='styleCheck styleCheck2' /> <span class='span span2'>加辣</span> <input type=\"checkbox\" id='styleNeeds3' value='加醋' class='styleCheck styleCheck3' onClick='addContent(3)'/> <span class='span span3'>加醋</span> <input type=\"checkbox\" id='styleNeeds4' value='不加香菜' onClick='addContent(4)' class='styleCheck styleCheck4'/> <span class='span span4'>不加香菜</span></div>";
-			str+= "		<p class='cart_prompt'>对于此餐品的备注：</p>";
+			str+= "		<p class='cart_prompt'>对于此货品的备注：</p>";
 			str+= "		<p class='cart_intro'><textarea id=\"cart_desc\" class='cart_input'></textarea></p>";
-			str+= "		<p class='submit_cart'><img src=\"images/button/addCart1.jpg\" onmouseout=\"checkbg1()\" onmouseover=\"checkbg2()\" mousedown='checkbg3()' id=\"addCartF\"  alt=\"\" style='cursor:pointer;' onClick=\"addCart_t("+shopID+","+foodID+","+spotID+","+circleID+",'"+time1+"','"+time2+"')\"/><span><a href='javascript:void();' onClick=\"closeFlow()\">回到餐厅界面</a></span></p>";
+			str+= "		<p class='submit_cart'><img src=\"images/button/addCart1.jpg\" onmouseout=\"checkbg1()\" onmouseover=\"checkbg2()\" mousedown='checkbg3()' id=\"addCartF\"  alt=\"\" style='cursor:pointer;' onClick=\"addCart_t("+shopID+","+foodID+","+spotID+","+circleID+",'"+time1+"','"+time2+"')\"/><span><a href='javascript:void();' onClick=\"closeFlow()\">回到店铺界面</a></span></p>";
 			str+= "	</div>";*/
 			TINY.box.show_cart(str,0,487,297,0,0);
 	}
@@ -239,7 +239,7 @@
 	}
 
 	function addCart_t(shopID,foodID,spotID,circleID,time1,time2){
-		//检查是否是送餐时间
+		//检查是否是送货时间
 		var addressID='';
 		if ($("#spotID").length>0)
 		{
@@ -297,7 +297,7 @@
 	}
 		//直接加入购物车
 	function addCart_im(shopID,foodID,spotID,circleID){
-		//检查是否是送餐时间
+		//检查是否是送货时间
 		var addressID='';
 		var time1=$('#time1').val();
 		var time2=$('#time2').val();
@@ -336,7 +336,7 @@
 	}
 
 	function addCart_c(shopID,foodID){
-		//检查是否是送餐时间
+		//检查是否是送货时间
 		var desc='';
 		var spotID='';
 		var circleID=$('#circleID').val();
@@ -583,7 +583,7 @@
 							if (rs[0]=="N"){
 								$("#selever").hide();
 								$("#selever2").hide();
-								TINY.box.show_spot('亲，您选择的地址不在此餐厅派 送范围内。查看可如约送达的餐 厅，请点击<a href="spot.php?spotID='+spot+'&circleID='+circle+'">这里</a>。',0,297,163,0,0);
+								TINY.box.show_spot('亲，您选择的地址不在此店铺派 送范围内。查看可如约送达的店铺，请点击<a href="spot.php?spotID='+spot+'&circleID='+circle+'">这里</a>。',0,297,163,0,0);
 							}else{
 								$("#selever").show();
 								$("#selever2").show();
@@ -659,7 +659,7 @@ $(function(){
 							if (rs[0]=="N"){
 								$("#selever").hide();
 								$("#selever2").hide();
-								TINY.box.show_spot('亲，您选择的地址不在此餐厅派 送范围内。查看可如约送达的餐 厅，请点击<a href="spot.php?spotID='+rs[2]+'&circleID='+rs[1]+'">这里</a>',0,297,163,0,0);
+								TINY.box.show_spot('亲，您选择的地址不在此店铺派 送范围内。查看可如约送达的店铺，请点击<a href="spot.php?spotID='+rs[2]+'&circleID='+rs[1]+'">这里</a>',0,297,163,0,0);
 								return false;
 							}else{
 								$("#selever").show();
@@ -775,7 +775,7 @@ function getComPageData(page){
 	function addCart_new(shopID,foodID,spotID,circleID){		
 		var time1=$('#time1').val();
 		var time2=$('#time2').val();
-		//检查是否是送餐时间
+		//检查是否是送货时间
 		var str='';
 		var name=$('#foodName'+foodID).val();
 		var price=$('#foodPrice'+foodID).val();
@@ -799,7 +799,7 @@ function getComPageData(page){
 	function addCart_new(shopID,foodID,spotID,circleID){
 		var time1=$('#time1').val();
 		var time2=$('#time2').val();
-		//检查是否是送餐时间
+		//检查是否是送货时间
 		var str='';
 		var name=$('#foodName'+foodID).val();
 		var price=$('#foodPrice'+foodID).val();
@@ -809,7 +809,7 @@ function getComPageData(page){
 			str+= "		<div id='c_table'>";
 			str+= "			<table border='0' width='455'>";
 			str+= "				<tr>";
-			str+= "					<td class='menu first td' width='195'>菜名</td>";
+			str+= "					<td class='menu first td' width='195'>货品名</td>";
 			str+= "					<td class='menu' >价格</td>";
 			str+= "				</tr>";
 			str+= "				<tr>";
@@ -819,15 +819,15 @@ function getComPageData(page){
 			str+= "			</table>";
 			str+= "		</div>";
 			str+= "<div id=\"cart_needs\"><span class='span span_need'>口味需求：</span><input type=\"checkbox\" id='styleNeeds1' onClick='addContent(1)' value='主食加量' class='styleCheck'/> <span class='span mainfood'>主食加量</span> <input type=\"checkbox\" id='styleNeeds2' onClick='addContent(2)' value='加辣' class='styleCheck styleCheck2' /> <span class='span span2'>加辣</span> <input type=\"checkbox\" id='styleNeeds3' value='加醋' class='styleCheck styleCheck3' onClick='addContent(3)'/> <span class='span span3'>加醋</span> <input type=\"checkbox\" id='styleNeeds4' value='不加香菜' onClick='addContent(4)' class='styleCheck styleCheck4'/> <span class='span span4'>不加香菜</span></div>";
-			str+= "		<p class='cart_prompt'>对于此餐品的备注：</p>";
+			str+= "		<p class='cart_prompt'>对于此货品的备注：</p>";
 			str+= "		<p class='cart_intro'><textarea id=\"cart_desc\" class='cart_input'></textarea></p>";
-			str+= "		<p class='submit_cart'><img src=\"images/button/addCart1.jpg\" onmouseout=\"checkbg1()\" onmouseover=\"checkbg2()\" mousedown='checkbg3()' id=\"addCartF\"  alt=\"\" style='cursor:pointer;' onClick=\"addCart_t_new("+shopID+","+foodID+","+spotID+","+circleID+",'"+time1+"','"+time2+"')\"/><span><a href='javascript:void();' onClick=\"closeFlow()\">回到餐厅界面</a></span></p>";
+			str+= "		<p class='submit_cart'><img src=\"images/button/addCart1.jpg\" onmouseout=\"checkbg1()\" onmouseover=\"checkbg2()\" mousedown='checkbg3()' id=\"addCartF\"  alt=\"\" style='cursor:pointer;' onClick=\"addCart_t_new("+shopID+","+foodID+","+spotID+","+circleID+",'"+time1+"','"+time2+"')\"/><span><a href='javascript:void();' onClick=\"closeFlow()\">回到店铺界面</a></span></p>";
 			str+= "	</div>";
 			TINY.box.show_cart(str,0,487,297,0,0);
 	}*/
 
 	function addCart_t_new(shopID,foodID,spotID,circleID,time1,time2){
-		//检查是否是送餐时间
+		//检查是否是送货时间
 		var addressID='';
 		
 		if ($("#spotID").length>0)
@@ -886,7 +886,7 @@ function getComPageData(page){
 
 	//立即加入
 	function addCart_im_new(shopID,foodID,spotID,circleID){
-		//检查是否是送餐时间
+		//检查是否是送货时间
 		var time1=$('#time1').val();
 		var time2=$('#time2').val();
 		var addressID='';
@@ -926,7 +926,7 @@ function getComPageData(page){
 	}
 
 	function addCart_c_new(shopID,foodID){
-		//检查是否是送餐时间
+		//检查是否是送货时间
 		var desc='';
 		var spotID='';
 		var addressID='';

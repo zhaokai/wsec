@@ -6,7 +6,7 @@
 	 * @create time   2011-8-22
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -77,9 +77,9 @@
 				$sql2="update qiyu_order set order_status='5'  where order_id=".$id;
 				if(mysql_query($sql2)){
 					//添加订单记录
-					//addOrderType($order,'商家开始备餐');
-					$orderContent="<span class='greenbg'><span><span>订单已被餐厅接受</span></span></span>";
-					$orderContent.="亲,您在".$rows['order_addtime']."所订美味餐品已迫不及待奔向您，马上会到达，请注意查收哦！";
+					//addOrderType($order,'商家开始备货');
+					$orderContent="<span class='greenbg'><span><span>订单已被店铺接受</span></span></span>";
+					$orderContent.="亲,您在".$rows['order_addtime']."所订美味货品已迫不及待奔向您，马上会到达，请注意查收哦！";
 					addOrderType($order,HTMLEncode($orderContent));
 					alertInfo('操作成功','shoporder.php'.$url,0);
 				}else

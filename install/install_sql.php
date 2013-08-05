@@ -6,8 +6,8 @@
  * @version       v0.01
  * @create time   2011-5-30
  * @update time   
- * @author        wiipu
- * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. ( http://www.wiipu.com)
+ * @author        PLS
+ * @copyright     Copyright (c) JYZX PLS Tech Inc. ( http://www.PLS.com)
  * @informaition  
 
  * Update Record:
@@ -823,36 +823,36 @@ $sqlstr[125]="CREATE TABLE `".$prefix."_userscore` (
 
 	
 	$sqlstr[126]="INSERT INTO `".$prefix."_button` (`button_id`, `button_color`, `button_bttext`, `button_title`, `button_content`) VALUES
-(3, '1', '送餐范围变更', '商家送餐范围变更', ''),
-(4, '1', '无法送餐', '商家暂时无法送餐', ''),
-(5, '1', '无此餐品', '商家无此餐品', ''),
-(6, '2', '30分钟催餐', '我饿了', ''),
-(7, '2', '45分钟催餐', '我真的饿了', ''),
+(3, '1', '送货范围变更', '商家送货范围变更', ''),
+(4, '1', '无法送货', '商家暂时无法送货', ''),
+(5, '1', '无此货品', '商家无此货品', ''),
+(6, '2', '30分钟催货', '我饿了', ''),
+(7, '2', '45分钟催货', '我真的饿了', ''),
 (8, '2', '菜价变更', '商家菜价变更', ''),
 (9, '2', '电话无人接听', '正在与商家联系', ''),
-(10, '1', '取消', '订单取消', '亲，您在XXX年XX月xx日所订美味餐品已取消。'),
+(10, '1', '取消', '订单取消', '亲，您在XXX年XX月xx日所订货品已取消。'),
 (11, '2', '预约订单短信', '预约订单', ''),
-(12, '2', '是否收到餐', '吃了吗您呐', '');";
+(12, '2', '是否收到货', '用了吗您呐', '');";
 
 $sqlstr[127]="INSERT INTO `".$prefix."_foodlable` (`foodlable_id`, `foodlable_name`, `foodlable_icon`, `foodlable_order`) VALUES
 (2, '人气', '', 1),
-(3, '辣', '', 2),
-(4, '素菜', '', 3),
+(3, '热', '', 2),
+(4, '清新', '', 3),
 (5, '多人特惠套餐', '', 999);";
 
 $sqlstr[128]="INSERT INTO `".$prefix."_seo` (`seo_id`, `seo_title`, `seo_keywords`, `seo_description`, `seo_type`, `seo_spot`, `seo_circle`, `seo_shop`) VALUES
-(1, ' 让外卖如约而至', '北京外卖,北京快餐,北京网上订餐,送餐,外卖菜单,北京送餐网,', '北京外卖网上订餐平台，为您提供最贴心的网上订餐送餐服务，呈现即可如约送达的北京外卖菜单，用户选填地址后看到的外卖菜单都是可以在约定时间内送达的快餐，让您足不出户尽享身边美食。', '1', NULL, NULL, NULL);";
+(1, ' 让送货如约而至', '西安网店,西安网购,西安网上订货,送货,西安送货网,', '西安网上订货平台，为您提供最贴心的网上订货送货服务，呈现即可如约送达的西安网上订货，用户选填地址后看到的菜单都是可以在约定时间内送达的，让您足不出户尽享网购乐趣。', '1', NULL, NULL, NULL);";
 
 $sqlstr[129]="INSERT INTO `".$prefix."_shop` (`shop_id`,`shop_status`, `shop_type`,  `shop_account`, `shop_password`, `shop_busy`, `shop_code`, `shop_hot`, `shop_buycount`, `shop_telclickcount`, `shop_istakeaway`, `shop_openstarttime`, `shop_openendtime`, `shop_address`, `shop_tel`, `shop_name`, `shop_intro`, `shop_mainfood`) VALUES
-(1,  '1', '1', 'admin', '61d83593756977d3b13c252749af79be', '1', 'QYG83H',  '3', 0, 0, '0', '08:00:00', '22:30:00', '餐厅地址', '8888888', '餐厅名称', '畅享品质生活，来试试微普家常菜！', '盖饭、炒菜、砂锅');";
+(1,  '1', '1', 'admin', '61d83593756977d3b13c252749af79be', '1', 'QYG83H',  '3', 0, 0, '0', '08:00:00', '22:30:00', '店铺地址', '8888888', '店铺名称', '畅享品质生活，来试试<JY>网购！', '生活 网购 时尚');";
 
 $sqlstr[130]="INSERT INTO `".$prefix."_site` (`site_logo`, `site_icp`, `site_isshowprotocol`, `site_isshowcomment`, `site_sms`, `site_isshowadminindex`,`site_iscartfoodtag`,`site_yunprintnum`,`site_cartfoodtag`) VALUES
-('', 'Copyright © 2011 diancan365.com All right reserved 京ICP11029727','1','1','2','1','1','1','甜一点;酸酸的;要辣椒;要香菜');";
+('', 'Copyright © 2013 www.com All right reserved 陕ICPXXXXXXXX','1','1','2','1','1','1','新奇;时尚;潮流');";
 
 $sqlstr[131]="INSERT INTO `".$prefix."_deliver` (`deliver_fee`, `deliver_minfee`) VALUES (0, 0);";
 
 $sqlstr[132]="INSERT INTO `".$prefix."_tag` (`tag_id`, `tag_name`, `tag_isspot`, `tag_score`, `tag_pic`) VALUES
-(1, '免送餐费', '1', 6, ''),
+(1, '免送货费', '1', 6, ''),
 (5, '40分钟送达', '1', 2, ''),
 (6, '30分钟送达', '1', 3, ''),
 (7, '已认证标签', '0', 1, NULL),
@@ -860,19 +860,19 @@ $sqlstr[132]="INSERT INTO `".$prefix."_tag` (`tag_id`, `tag_name`, `tag_isspot`,
 (9, '返点标签', '0', 1, '');";
 
 $sqlstr[132]="INSERT INTO `".$prefix."_foodtype` (`foodtype_id`, `foodtype_name`, `foodtype_shop`, `foodtype_order`) VALUES
-(1, '盖饭', 1, 999),
-(2, '炒菜', 1, 999);";
+(1, '手机', 1, 999),
+(2, '靓号', 1, 999);";
 
 $sqlstr[133]="INSERT INTO `".$prefix."_food` (`food_id`, `food_foodtype`, `food_shop`, `food_name`, `food_price`, `food_status`, `food_intro`, `food_pic`, `food_special`, `food_order`, `food_oldprice`, `food_check`, `food_groupprice`, `food_isshow`,`food_count`) VALUES
-(1, 2, 1, '家常豆腐', 10.00, '0', '软嫩可口', 'userfiles/food/doufu.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
-(2, 1, 1, '四季豆', 15.00, '0', '健康美食', 'userfiles/food/sijidou.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
-(3, 2, 1, '番茄炒蛋', 10.00, '1', '美味', 'userfiles/food/jidan.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
-(4, 1, 1, '鲶鱼炖茄子', 30.00, '0', '特色', 'userfiles/food/nianyu.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
-(5, 1, 1, '鱼香肉丝', 12.00, '0', '美味', 'userfiles/food/yuxiang.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
-(6, 2, 1, '瓦罐酥鱼头', 20.00, '0', '鲜香', 'userfiles/food/yutou.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
-(7, NULL, 1, '螺狮粉', 15.00, '0', NULL, 'userfiles/food/1352875153650.jpg', '1', 0, 18, '0', 0.00, '0','0'),
-(8, NULL, 1, '鱼香肉丝盖饭', 12.00, '0', NULL, 'userfiles/food/1352875189516.jpg', '1', 0, 14, '0', 0.00, '0','0'),
-(9, NULL, 1, '油泼面', 7.00, '0', NULL, 'userfiles/food/1352875216271.jpg', '1', 0, 8, '0', 0.00, '0','0');";
+(1, 2, 1, '三星 Galaxy SIII', 10.00, '0', '双卡双待', 'userfiles/food/doufu.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
+(2, 1, 1, 'callbar T5 小雨滴4', 15.00, '0', '双卡', 'userfiles/food/sijidou.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
+(3, 2, 1, '三星 I8750', 10.00, '1', '好评', 'userfiles/food/jidan.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
+(4, 1, 1, '诺基亚 Lumia 720', 30.00, '0', '佳品', 'userfiles/food/nianyu.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
+(5, 1, 1, '海信 MIRA U970', 12.00, '0', '佳品', 'userfiles/food/yuxiang.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
+(6, 2, 1, 'HTC T329d', 20.00, '0', '好评', 'userfiles/food/yutou.jpg', NULL, 999, 0, '0', 0.00, '0','0'),
+(7, NULL, 1, '华为 W1', 15.00, '0', NULL, 'userfiles/food/1352875153650.jpg', '1', 0, 18, '0', 0.00, '0','0'),
+(8, NULL, 1, '中兴（ZTE）U930HD', 12.00, '0', NULL, 'userfiles/food/1352875189516.jpg', '1', 0, 14, '0', 0.00, '0','0'),
+(9, NULL, 1, '苹果（APPLE）iPhone 5', 7.00, '0', NULL, 'userfiles/food/1352875216271.jpg', '1', 0, 8, '0', 0.00, '0','0');";
 
 $sqlstr[134]="INSERT INTO `".$prefix."_delivertime` (`delivertime_id`, `delivertime_name`, `delivertime_shop`, `delivertime_starttime`, `delivertime_endtime`) VALUES (6, '全天', 1, '00:00:00', '23:59:00');";
 ?>

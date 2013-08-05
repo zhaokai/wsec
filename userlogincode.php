@@ -6,7 +6,7 @@
  * @create time   2011-8-1
  * @update time   
  * @author        jiangting
- * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+ * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
  * @informaition  
  */
 session_start();

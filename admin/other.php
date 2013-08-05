@@ -6,7 +6,7 @@
 	 * @create time   2012-3-21
 	 * @update time
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -14,13 +14,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="Author" content="微普科技http://www.wiipu.com"/>
+<meta name="Author" content="JYZXhttp://www.PLS.com"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="../style.css" type="text/css"/>
 <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
 <script src="../js/tree.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/upload.js"></script>
-<title> 网站设置 - 微普外卖点餐系统 </title>
+<title> 网站设置 - <JY>网店系统 </title>
 </head>
 <body>
  <div id="container">
@@ -50,12 +50,12 @@
 							   <textarea cols="23" rows="4" name="stat"><?php echo $site_stat?></textarea> (输入站长统计代码) 
 							</p>
 							<p style="margin-left:15px;">
-							   开启添加购物车的餐品备注：
+							   开启添加购物车的货品备注：
 							   <input type="radio" name="iscartfoodtag" value="1" <?php if($site_iscartfoodtag=='1') echo 'checked';?>>&nbsp;是&nbsp;&nbsp;
 							   <input type="radio" name="iscartfoodtag" value="2" <?php if($site_iscartfoodtag=='2') echo 'checked';?>>&nbsp;否
 							</p>
 							<p class="clear">
-							   <label>餐品备注：(需要开启)</label>
+							   <label>货品备注：(需要开启)</label>
 							</p>
 							<p><textarea name="cartfoodtag" cols="23" rows="4"><?php echo $site_cartfoodtag;?></textarea> (请用英文分号“;”隔开)</p>											
 							<p><label >&nbsp;</label><input type="image" src="../images/button/submit_t.jpg"  /></p>

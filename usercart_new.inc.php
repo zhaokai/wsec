@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 ?>
@@ -142,7 +142,7 @@
 							?>
 							
 							<div class='haveAddress' style='border:0;'>
-								<p>外卖时间要求：</p>
+								<p>送货时间要求：</p>
 								<div class='cart_list'><select id="time1" name='time1' class='time' style='width:107px;color:#fe5b02;'>
 								<?php
 									
@@ -225,7 +225,7 @@
 									}
 
 									if ($i==0)			
-										echo "<tr><td colspan='6' class=\"padding\" width=\"220\"> 还没有添加餐品 </td></tr>";
+										echo "<tr><td colspan='6' class=\"padding\" width=\"220\"> 还没有添加货品 </td></tr>";
 										
 								?>
 									
@@ -258,9 +258,9 @@
 								?>
 							
 									<tr id='selever' >
-										<td colspan='6'  class="gray padding no_border" style='padding-top:10px;' width="220"><span id="deliverfee">送餐费：<?php echo $deliverfee?>元</span><span style="margin-left:25px;" id='sendfee'>
+										<td colspan='6'  class="gray padding no_border" style='padding-top:10px;' width="220"><span id="deliverfee">送货费：<?php echo $deliverfee?>元</span><span style="margin-left:25px;" id='sendfee'>
 									<?php
-										if ($deliver_isfee=='1') echo "满".$sendfee_r."元免送餐费";
+										if ($deliver_isfee=='1') echo "满".$sendfee_r."元免送货费";
 										echo "最低起送".$sendfee_r."元";
 									?>	
 										

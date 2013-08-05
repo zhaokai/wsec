@@ -6,7 +6,7 @@
  * @create time   2012-3-1
  * @update time   
  * @author        liuwenjuan
- * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. ( http://www.wiipu.com)
+ * @copyright     Copyright (c) JYZX PLS Tech Inc. ( http://www.PLS.com)
  * @informaition  
 
  * Update Record:

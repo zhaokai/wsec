@@ -6,7 +6,7 @@
 	 * @create time   2011-9-22
 	 * @update time
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 		header("Content-type: text/html; charset=utf-8");
@@ -19,7 +19,7 @@
 		$sql="select * from ".WIIDBPRE."_order where order_id=".$orderid;
 		$rs=mysql_query($sql);
 		$row=mysql_fetch_assoc($rs);
-		//检查是否可以催餐
+		//检查是否可以催货
 		$isHurry_30=false;
 		$isHurry_45=false;
 		$isHurry_60=false;

@@ -51,7 +51,7 @@
 						</div>
 						
 						<div class="addList addList_reg addList_reg">
-							<label>&nbsp;</label> <span>您的手机号就是您在<?php echo $SHOP_NAME?>的登录账号。请填<br/>写您常用的手机号，以便送餐员联系您。</span>
+							<label>&nbsp;</label> <span>您的手机号就是您在<?php echo $SHOP_NAME?>的登录账号。请填<br/>写您常用的手机号，以便送货员联系您。</span>
 						</div>
 						<div class="addList addList_r addList_reg">
 							<label>设置您的密码：</label><input type="password" id="pw" name="pw" class="input"/> <span class="errormt red">*</span>

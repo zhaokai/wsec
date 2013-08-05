@@ -80,7 +80,7 @@
 			<div class="main_top"></div>
 			<div class="main_center">
 				<div id="orderBox" class="loginBox">
-					<div class="order_title login_title" style='margin-bottom:100px;'><?php if (!empty($p)) echo "亲 需要登陆才能继续点餐哦！";else echo "登陆"?></div>
+					<div class="order_title login_title" style='margin-bottom:100px;'><?php if (!empty($p)) echo "亲 需要登陆才能继续订购哦！";else echo "登陆"?></div>
 					<div id="left_new" >
 						<form method="post" action="userlogin_do.php?p=<?php echo $p?>&shopID=<?php echo $shopID?>&shopSpot=<?php echo $shopSpot?>&shopCircle=<?php echo $shopCircle?>">
 						<div class="addList" style="margin-top:19px;"><label>手机号：</label><input type="text" id="z_phone" name="z_phone" class="input"  value="<?php echo $QIYU_USER_ACCOUNT?>" /><span id="prompt" style="color:red;position:absolute;left:210px;top:150px;"></span></div>
@@ -93,7 +93,7 @@
 					<div id="right_new" style='height:450px;'>
 						<p class="center" style="margin-top:0;"><img src="images/ask.jpg"  alt="" /></p>
 						<p class="center"><a href="userreg.php?p=<?php echo $p?>&shopID=<?php echo $shopID?>&shopSpot=<?php echo $shopSpot?>&shopCircle=<?php echo $shopCircle?>" hidefocus="true" style="outline:none;"><img src="images/button/reg.gif" alt="注册" id="regButton" /></a></p>
-						<p style="text-align:center;">注册以后，就可以在网上订想吃的外卖了!</p>
+						<p style="text-align:center;">注册以后，就可以在网上订想要的商品了!</p>
 					</div>
 					<div class="clear"></div>
 					<div class="botton_bg">

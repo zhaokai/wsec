@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 ?>
@@ -40,7 +40,7 @@
 			</div>
 		
 			<div class="location" style='left:100px;top:30px;'><a href="admin.php" style="color:#fff;"><?php echo $SHOPNAME_DDMIN?></a></div>
-			<p class='shopindex'><a href="../index.php" target='_blank'>餐厅首页</a></p>
+			<p class='shopindex'><a href="../index.php" target='_blank'>店铺首页</a></p>
 			
 		</div>
 	</div>

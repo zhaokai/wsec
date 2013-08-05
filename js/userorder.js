@@ -16,7 +16,7 @@
 						location.href='usercenter.php?tab=2&key=all';
 					}
 					if (post=="Q"){
-						alert('餐厅已接收订单，不能取消');
+						alert('店铺已接收订单，不能取消');
 						location.href='usercenter.php?tab=2&key=all';
 					}
 					if (post=="N"){

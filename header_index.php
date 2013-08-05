@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	 $p=empty($_GET['p'])?'':sqlReplace(trim($_GET['p'])); //从订单页来的标示
@@ -28,7 +28,7 @@
 					$imgstr=$logo;
 				}
 			?>
-			<a href="index.php"><img src="<?php echo $imgstr?>" style="width:178px; height:54px;" alt="餐厅logo" id="logo" /></a>
+			<a href="index.php"><img src="<?php echo $imgstr?>" style="width:178px; height:54px;" alt="店铺logo" id="logo" /></a>
 			
 			<div id="login">
 				<ul>
@@ -42,7 +42,7 @@
 		<?php
 			if (empty($_SESSION['qiyu_uid'])){
 		?>
-				<li class="login_li" ><a href="userlogin.php" >登录</a><!-- <a href="<?=$aurl?>"><img src="images/sina.jpg"  alt="" id="sina"/></a><div id="sinaLogin" style="display:none;"><img src="images/gt.gif" alt="" class="arrow"/><div class="instrBox" style="width:145px;text-align:left;margin:0;font-size:12px;padding:8px 8px 8px 12px;">使用您的新浪微博账号登陆</div></div>--></li>  <li class="login_li no_bg"><a href="<?php echo $regUrl?>"   id="reg">快速注册<div id="hide" style="display:none;"><img src="images/gt.gif" alt="" class="arrow"/><div class="instrBox" style="width:128px;text-align:left;margin:0;font-size:12px;padding-left:15px;">加入<?php echo $SHOP_NAME?> 享受属于您的外卖生活</div></div></a></li>
+				<li class="login_li" ><a href="userlogin.php" >登录</a><!-- <a href="<?=$aurl?>"><img src="images/sina.jpg"  alt="" id="sina"/></a><div id="sinaLogin" style="display:none;"><img src="images/gt.gif" alt="" class="arrow"/><div class="instrBox" style="width:145px;text-align:left;margin:0;font-size:12px;padding:8px 8px 8px 12px;">使用您的新浪微博账号登陆</div></div>--></li>  <li class="login_li no_bg"><a href="<?php echo $regUrl?>"   id="reg">快速注册<div id="hide" style="display:none;"><img src="images/gt.gif" alt="" class="arrow"/><div class="instrBox" style="width:128px;text-align:left;margin:0;font-size:12px;padding-left:15px;">加入<?php echo $SHOP_NAME?> 享受属于您的网购生活</div></div></a></li>
 				
 				
 		<?php

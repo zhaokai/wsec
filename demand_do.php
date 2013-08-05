@@ -6,7 +6,7 @@
 	 * @create time   2011-9-19
 	 * @update time
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 			require('include/dbconn.php');
@@ -20,6 +20,6 @@
 				//alertInfo('此收藏已不存在',"usercenter.php?tab=4",0);
 				echo '未知原因，提交失败';
 			else{
-				echo '感谢您的关注，我们会尽快开发您周边的餐厅';
+				echo '感谢您的关注，我们会尽快开发您周边的店铺';
 			}
 ?>

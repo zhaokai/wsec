@@ -6,7 +6,7 @@
 	 * @create time   2011-8-22
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -14,14 +14,14 @@
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="Author" content="微普科技http://www.wiipu.com"/>
+<meta name="Author" content="JYZXhttp://www.PLS.com"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="../style.css" type="text/css"/>
 <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
 <script src="../js/tree.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/upload.js"></script>
 <script type="text/javascript" src="js/shoptop.js"></script>
-<title> 添加推荐菜 - 微普外卖点餐系统 </title>
+<title> 添加推荐菜 - <JY>网店系统 </title>
 </head>
 <body>
  <div id="container">
@@ -40,7 +40,7 @@
 				<div id="shopRight">
 					<h1><a href="shoptop.php">推荐菜管理</a>&nbsp;&gt;&gt;&nbsp;添加推荐菜</h1>
 					<div id="introAdd">
-						<p style="margin-left:43px;color:red;">小提示：将您餐厅的招牌菜设置推荐,将在首页餐厅推荐的位置显示。</p>
+						<p style="margin-left:43px;color:red;">小提示：将您店铺的招牌菜设置推荐,将在首页店铺推荐的位置显示。</p>
 						<form method="post" action="shop_do.php?act=topadd" >	
 							<p><label>名称:</label><input type="text" id="name" name="name" class="input input179"/> *</p>
 							<p><label>原价:</label><input type="text" id="price1" name="price1" class="input input179"/>元 *</p>

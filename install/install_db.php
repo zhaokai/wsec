@@ -6,8 +6,8 @@
  * @version       v0.01
  * @create time   2011-5-30
  * @update time   
- * @author        wiipu
- * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. ( http://www.wiipu.com)
+ * @author        PLS
+ * @copyright     Copyright (c) JYZX PLS Tech Inc. ( http://www.PLS.com)
  * @informaition  
 
  * Update Record:
@@ -18,7 +18,7 @@
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-   <meta name="Author" content="微普科技http://www.wiipu.com"/>
+   <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="html/text; charset=utf-8" />
    <link rel="stylesheet" href="style.css" type="text/css"/>
   <title> <?php echo $_['header_database']." - ".$_['text_title']?> </title>

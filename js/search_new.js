@@ -340,7 +340,7 @@ function searchShop(){
 	
 	if (keyword=='')
 	{
-		 TINY.box.show_spot('搜索的外卖地址不能为空',0,297,163,0,10);
+		 TINY.box.show_spot('搜索的订单地址不能为空',0,297,163,0,10);
 		return false;
 	}
 	searchResult_s(page,keyword,lat,lng);

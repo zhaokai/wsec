@@ -6,7 +6,7 @@
 	 * @create time   2012-3-21
 	 * @update time
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -14,7 +14,7 @@
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <link rel="stylesheet" href="style.css" type="text/css"/>
@@ -23,7 +23,7 @@
   <script src="../js/tree.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/lightbox/js/jquery.lightbox-0.5.js"></script>
   <link rel="stylesheet" href="js/lightbox/css/jquery.lightbox-0.5.css" type="text/css" />
-  <title> 网站模板设置 - 微普外卖点餐系统 </title>
+  <title> 网站模板设置 - <JY>网店系统 </title>
  </head>
  <body>
  <div id="container">

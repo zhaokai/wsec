@@ -6,7 +6,7 @@
 	 * @create time   2011-8-6
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck.php");
@@ -164,13 +164,13 @@ $(function(){
 					
 						<div class="addList addList_r loginlist" style="margin-left:38px;margin-bottom:30px;">
 							<p style="color:#000000;">现在不想注册?直接下单:</p>
-							<p><span>如果您没有旗鱼账号但是想以后再注册，可以直接下单，只需填写您的送餐地址和手机号。</span></p>
+							<p><span>如果您没有旗鱼账号但是想以后再注册，可以直接下单，只需填写您的送货地址和手机号。</span></p>
 						</div>
 						<div class="addList addList_r loginlist" style="margin-top:0;padding-top:10px;">
 							<label>您的手机号：</label><input type="text" name="phone" id="phone" class="input"/> <span class="red"></span>
 						</div>
 						<div class="addList loginlist">
-							<label>&nbsp;</label> <span>手机号将用于您登录本站、取回密码以及送餐联系，<br/>请填 写您常用的手机号。</span>
+							<label>&nbsp;</label> <span>手机号将用于您登录本站、取回密码以及送货联系，<br/>请填 写您常用的手机号。</span>
 						</div>
 						
 						<div class="addList addList_r loginlist"><label>您的姓名：</label><input type="text" id="name" name="name" class="input"/> <span class="red"></span>
@@ -208,9 +208,9 @@ $(function(){
 						</form>
 					</div><!--leftwan-->
 					<div id="loginRight">
-						<p>已经注册了旗鱼点餐网账号？ <a href="userlogin.php">立刻登录</a></p>
-						<p style="margin-top:50px;">还没有旗鱼点餐网账号？ <a href="userreg.php">马上注册一个</a></p>
-						<p style="margin-top:5px;"><span>注册旗鱼点餐网账号，即可体验快捷点餐<br/>的便利， 享受网站的各项优惠折扣。</span></p>
+						<p>已经注册了旗鱼订购网账号？ <a href="userlogin.php">立刻登录</a></p>
+						<p style="margin-top:50px;">还没有旗鱼订购网账号？ <a href="userreg.php">马上注册一个</a></p>
+						<p style="margin-top:5px;"><span>注册旗鱼订购网账号，即可体验快捷订购<br/>的便利， 享受网站的各项优惠折扣。</span></p>
 					</div>
 					<div class="clear"></div>
 				</div><!--tab_box_r-->

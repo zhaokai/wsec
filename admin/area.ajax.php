@@ -6,7 +6,7 @@
 	 * @create time   2011-7-27
 	 * @update time   
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) 微普科技 PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition  
 	 */
 	require('../include/dbconn.php');

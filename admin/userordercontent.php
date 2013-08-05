@@ -6,7 +6,7 @@
 	 * @create time   2011-8-22
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -163,7 +163,7 @@
 		$state=$orderState[$rows['order_status']];
 		$order_state=$rows['order_status'];
 		$ordeText=$rows['order_infor'];
-		$text=$rows['order_text'];//餐饮要求
+		$text=$rows['order_text'];//货品要求
 		$address=$rows['order_address'];//订单地址
 		$type=$rows['order_type'];//订单地址
 		$subtime=$rows['order_time1'].'&nbsp;'.$rows['order_time2'];
@@ -186,14 +186,14 @@
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
   <script src="../js/tree.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/upload.js"></script>
   <script type="text/javascript" src="js/shopadd.js"></script>
-  <title> 订单详情 - 微普外卖点餐系统 </title>
+  <title> 订单详情 - <JY>网店系统 </title>
  </head>
  <body>
  <div id="container">
@@ -222,7 +222,7 @@
 								echo "<p>预约时间：".$subtime."</p>";
 							}
 						?>
-						<p>餐饮要求：<?php echo $text?></p>
+						<p>货品要求：<?php echo $text?></p>
 						<p>订单备注：<?php echo $ordeText?></p>
 						<p>用户地址：<?php echo $address?> </p>
 						<p>用户姓名：<?php echo $userName?></p>
@@ -295,7 +295,7 @@
 							<td colspan='5' style="text-align:right;padding-right:100px;height:30px; font-size:15px; color:red">菜格：<?php echo $total?>元</td>
 						</tr>
 						<tr>	
-							<td colspan='5' style="text-align:right;padding-right:100px;height:30px; font-size:15px; color:red">送餐费：<?php echo $deliverfee_r?>元</td>
+							<td colspan='5' style="text-align:right;padding-right:100px;height:30px; font-size:15px; color:red">送货费：<?php echo $deliverfee_r?>元</td>
 						</tr>
 						<?php if ($score>0){?>
 						<tr>	

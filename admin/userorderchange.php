@@ -6,7 +6,7 @@
 	 * @create time   2012-3-21
 	 * @update time
 	 * @author        liuxiaohui
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 	require_once("usercheck2.php");
@@ -14,7 +14,7 @@
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-  <meta name="Author" content="微普科技http://www.wiipu.com"/>
+  <meta name="Author" content="JYZXhttp://www.PLS.com"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="../style.css" type="text/css"/>
   <script src="../js/jquery-1.3.1.js" type="text/javascript"></script>
@@ -30,7 +30,7 @@
 			   data: "",
 			   success: function(msg){
 					if(msg){
-						$("#neworder2").html("有催餐("+msg+")");
+						$("#neworder2").html("有催货("+msg+")");
 					}else{
 						$("#neworder2").html("");
 					}
@@ -39,7 +39,7 @@
 		}
 	
 	</script>
-  <title> 催餐订单 - 微普外卖点餐系统 </title>
+  <title> 催货订单 - <JY>网店系统 </title>
  </head>
  <body>
  <div id="container">
@@ -57,7 +57,7 @@
 				</div>
 				<div id="shopRight">
 					<h1>
-						催餐订单
+						催货订单
 					</h1>
 					
 					<div id="introAdd">
@@ -71,7 +71,7 @@
 									<td class="center" width='10%'>总金额</td>
 									<td class="center" width='10%'>订单状态</td>
 									<td class="center" width='10%'>距离现在时间</td>
-									<td class="center" width='10%'>催餐状态</td>
+									<td class="center" width='10%'>催货状态</td>
 									<td class="center">操作</td>
 								</tr>
 								<?php
@@ -150,11 +150,11 @@
 											$userphone=$user_phone;
 										$hurry = $rows['orderchange_hurry'];
 										if($hurry=='0'){
-											$hurry='30分钟催餐';
+											$hurry='30分钟催货';
 										}else if($hurry=='1'){
-											$hurry='45分钟催餐';
+											$hurry='45分钟催货';
 										}else if($hurry=='2'){
-											$hurry='60分钟催餐';
+											$hurry='60分钟催货';
 										}else{
 											$hurry='---';
 										}

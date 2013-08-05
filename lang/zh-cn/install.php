@@ -5,8 +5,8 @@
  * @version       v0.01
  * @create time   2011-5-30
  * @update time   
- * @author        wiipu
- * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. ( http://www.wiipu.com)
+ * @author        PLS
+ * @copyright     Copyright (c) JYZX PLS Tech Inc. ( http://www.PLS.com)
  * @informaition  
 
  * Update Record:
@@ -20,17 +20,17 @@
 	$_['header_admin']                   = '设置管理员';
 	$_['header_finish']                  = '完成安装';
 
-	$_['text_title']                     ='安装点餐系统';
+	$_['text_title']                     ='安装网店系统';
 	$_['text_install_step']              ='安装步骤';
-	$_['text_step1_title']               ='欢迎使用点餐系统';
+	$_['text_step1_title']               ='欢迎使用网店系统';
 	$_['text_step2_title']               ='设置数据库';
 	$_['text_step3_title']               ='系统初始化';
 	$_['text_step4_title']               ='设置管理员';
 	$_['text_step5_title']               ='完成安装';
 
-	$_['text_step1_intro1']              ='感谢您使用点餐系统。点餐系统是一款轻量级的基于PHP+Mysql的论坛系统。';
-	$_['text_step2_intro1']              ="请按照说明完成安装步骤。整个过程只需要几分钟时间。如果您在安装过程中遇到问题，您可以尝试访问<a href='http://diancan365.com/bbs' target='_target'>点餐365论坛</a>，在常见问题板块下留言，我们的工作人员会及时回答你所咨询的问题。";
-	$_['text_step3_intro1']              ='点餐系统所需环境';
+	$_['text_step1_intro1']              ='感谢您使用网店系统。网店系统是一款轻量级的基于PHP+Mysql的论坛系统。';
+	$_['text_step2_intro1']              ="请按照说明完成安装步骤。整个过程只需要几分钟时间。如果您在安装过程中遇到问题，您可以尝试访问<a href='http://diancan365.com/bbs' target='_target'>订购365论坛</a>，在常见问题板块下留言，我们的工作人员会及时回答你所咨询的问题。";
+	$_['text_step3_intro1']              ='网店系统所需环境';
 	$_['text_step4_intro1']              ='您可以向服务器提供商询问是否支持以下环境参数。';
 	$_['text_param1_title']              ='项目';
 	$_['text_param2_title']              ='需求';
@@ -63,11 +63,11 @@
 	$_['text_subject1']                  ='建议不修改';
 	$_['text_subject2']                  ='安全起见，建议修改';
 
-	$_['text_success']                   ='恭喜您，点餐系统安装顺利完成！';
+	$_['text_success']                   ='恭喜您，网店系统安装顺利完成！';
 	$_['text_notice']                    ='请牢记以下资料';
 	$_['text_adminUrl']                  ='管理后台地址';
-	$_['text_inAdmin']                   ='进入点餐系统管理后台';
-	$_['text_inIndex']                   ='进入点餐系统首页';
+	$_['text_inAdmin']                   ='进入网店系统管理后台';
+	$_['text_inIndex']                   ='进入网店系统首页';
 
 	$_['text_check']                  ='下一步检测';
 	$_['text_folderLimit']                  ='文件夹的权限';
@@ -76,23 +76,23 @@
 
 	$_['text_superAdmin']                ='超级管理员';
  
-	$_['text_footer']                    ="Copyright(c)2008-2013 <a href=\"http://www.Wiipu.com/\" target=\"_blank\">北京微普科创科技有限公司</a>";
+	$_['text_footer']                    ="Copyright(c)2008-2013 <a href=\"http://www.PLS.com/\" target=\"_blank\">北京<JY>科创科技有限公司</a>";
 
 	//button alt
 
 	$_['alt_pre']                        ='上一步';
 	$_['alt_next']                       ='下一步';
 	$_['alt_finish']                     ='完成';
-	$_['alt_install']                     ='点餐系统安装程序';
+	$_['alt_install']                     ='网店系统安装程序';
 
 
 //error
 
 
 	$_['error_mb_string']                  ='您的服务器不支持mb_string。';
-	$_['error_php']                        ='您的PHP版本低于点餐系统所需的版本。';
+	$_['error_php']                        ='您的PHP版本低于网店系统所需的版本。';
 	$_['error_database_connect']           ='0005:数据库服务器连接失败！请返回上一页检查连接参数。';
-	$_['error_mysql']                      ='错误：Mysql版本低于点餐系统正常运行所需版本';
+	$_['error_mysql']                      ='错误：Mysql版本低于网店系统正常运行所需版本';
 	$_['error_session']                    ='错误：您的服务器环境不支持SESSION。';
 	$_['error_noDatabase']                 ='0006:数据库不存在！请返回上一页检查连接参数。';
 	$_['error_root_limit']                 ='0007:请为网站根目录设置写权限，然后刷新本页面。';

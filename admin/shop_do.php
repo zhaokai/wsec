@@ -6,7 +6,7 @@
 	 * @create time   2011-8-22
 	 * @update time
 	 * @author        lujiangxia
-	 * @copyright     Copyright (c) 微普科技 WiiPu Tech Inc. (http://www.wiipu.com)
+	 * @copyright     Copyright (c) JYZX PLS Tech Inc. (http://www.PLS.com)
 	 * @informaition
 	 */
 
@@ -30,13 +30,13 @@
 			$intro=HTMLEncode(trim($_POST['intro']));
 			if($intro=='200字以内'){$intro='';}
 			
-			checkData($name,'餐厅名称',1);
-			checkData($address,'餐厅地址',1);
-			checkData($tel,'餐厅电话',1);
-			checkData($opentime,'餐厅营业开始时间',1);
-			checkData($endtime,'餐厅营业结束时间',1);
-			checkData($mainfood,'餐厅主营食物',1);
-			checkData($intro,'餐厅介绍',1);
+			checkData($name,'店铺名称',1);
+			checkData($address,'店铺地址',1);
+			checkData($tel,'店铺电话',1);
+			checkData($opentime,'店铺营业开始时间',1);
+			checkData($endtime,'店铺营业结束时间',1);
+			checkData($mainfood,'店铺主营食物',1);
+			checkData($intro,'店铺介绍',1);
 			$sql="update qiyu_shop set shop_discount='".$discount."',shop_buycount='".$buycount."',shop_name='".$name."',shop_address='".$address."',shop_tel='".$tel."',shop_openstarttime='".$opentime."',shop_openendtime='".$endtime."',shop_intro='".$intro."',shop_status='1',shop_addtime=now(),shop_mainfood='".$mainfood."',shop_type='1' where shop_id=".$QIYU_ID_SHOP;
 			if (mysql_query($sql)){
 				alertInfo("编辑成功","",1);
@@ -82,11 +82,11 @@
 				if($deliverFee=='0'){
 					
 				}else{
-					alertInfo('送餐费不能为空','',1);
+					alertInfo('送货费不能为空','',1);
 				}
 			}else{
 				if(!is_numeric($deliverFee)){
-					alertInfo('送餐费必须是数字','',1);
+					alertInfo('送货费必须是数字','',1);
 				}
 			}
 			
@@ -149,10 +149,10 @@
 			}else{
 				$sql="insert into qiyu_shopstyle(shopstyle_style,shopstyle_shop) values (".$style.",".$QIYU_ID_SHOP.")";
 				if(mysql_query($sql)){
-					alertInfo('餐厅菜系添加成功','',1);
+					alertInfo('店铺菜系添加成功','',1);
 				}else{
 					
-					alertInfo('餐厅菜系添加失败','',1);
+					alertInfo('店铺菜系添加失败','',1);
 				}
 			}
 		break;
@@ -294,7 +294,7 @@
 			$rs=mysql_query($sql);
 			$rows=mysql_fetch_assoc($rs);
 			if($rows['count(*)']>0){
-				alertInfo('菜名称重复！请另取名字','',1);
+				alertInfo('货品名称重复！请另取名字','',1);
 			}else{				
 				$sql2 = "insert into qiyu_food(food_name,food_shop,food_price,food_foodtype,food_intro,food_status,food_order,food_pic) values ('".$name."','".$QIYU_ID_SHOP."','".$price."','".$type."','".$intro."','".$food_status."',999,'".$pic."')";
 				$result=mysql_query($sql2);
@@ -338,13 +338,13 @@
 			$result=mysql_query($sql);
 			$row=mysql_fetch_assoc($result);
 			if(!$row){
-				alertInfo('此菜名不存在',"",1);
+				alertInfo('此货品名不存在',"",1);
 			}else{
 					$sql="select * from ".WIIDBPRE."_food where food_name='".$name."' and food_shop=".$QIYU_ID_SHOP." and food_id not in(".$id.") and food_special is NULL";
 					$rs=mysql_query($sql);
 					$rows=mysql_fetch_assoc($rs);
 					if($rows){
-						alertInfo('菜名称重复!','',1);
+						alertInfo('货品名称重复!','',1);
 					}else{
 						$sql3="update ".WIIDBPRE."_food set food_name='".$name."',food_price='".$price."',food_status='".$food_status."',food_foodtype='".$type."',food_intro='".$intro."',food_pic='".$pic."' where food_id=".$id." and food_shop=".$QIYU_ID_SHOP;
 						if(mysql_query($sql3)){
@@ -383,7 +383,7 @@
 			$result=mysql_query($sql);
 			$row=mysql_fetch_assoc($result);
 			if(!$row){
-				alertInfo('您要删除的菜名不存在','',1);
+				alertInfo('您要删除的货品名不存在','',1);
 			}else{
 				$sql2="delete from ".WIIDBPRE."_food where food_id=".$id;
 				if(mysql_query($sql2)){
@@ -457,7 +457,7 @@
 			$row=mysql_fetch_assoc($rs);
 			$count=$row['c'];
 			if ($count>$FOODSPECIALCOUNT){
-				alertInfo("餐厅最多有推荐5个推荐菜","shoutop.php",0);
+				alertInfo("店铺最多有推荐5个推荐菜","shoutop.php",0);
 			}else{
 				$sqlStr="insert into qiyu_food(food_name,food_shop,food_price,food_special,food_pic,food_oldprice,food_isshow,food_status,food_check) values ('".$name."',".$QIYU_ID_SHOP.",".$price2.",'1','".$pic."',".$price1.",'0','0','0')";
 				if (mysql_query($sqlStr)){
